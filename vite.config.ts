@@ -82,4 +82,6 @@ export default defineConfig({
       include: [path.resolve(__dirname, './locales/**')],
     }),
   ],
+  
+ 
 });
