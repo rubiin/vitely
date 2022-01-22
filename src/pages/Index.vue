@@ -70,7 +70,7 @@ export default defineComponent({
         </li>
         <li class="cursor-pointer text-2xl">
           <a
-            href="https://github.com/alvarosaburido"
+            href="https://github.com/rubiin"
             rel="noreferrer"
             target="_blank"
             class="footer-link text-cyan-700 hover:text-cyan-500"
