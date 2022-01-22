@@ -1,9 +1,7 @@
 <p align='center'><img width="300px" style="display:block; margin:0 auto;" src="https://res.cloudinary.com/alvarosaburido/image/upload/v1621848301/projects/vitesome/logotype_zq9g5i.png" alt="Vitely - Vue3 + Vite template starter">
 </p>
 
-
 # Vitely 🌬 ⛵️
-
 
 > A simple opinionated Vue3 Starter Template with [Vite.js](https://vitejs.dev/)
 
@@ -21,6 +19,7 @@ This template should help get you started developing with Vue 3 and Typescript i
 - 🍍 [State Management via Pinia](https://pinia.esm.dev/)
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
 - 🔥 Use the [new `<script setup>` syntax](https://github.com/vuejs/rfcs/pull/227)
+- 
 - 🦾 TypeScript, of course
 - Deploy on Netlify
 

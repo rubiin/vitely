@@ -1,8 +1,8 @@
 {
-  "name": "ultimate-vite",
+  "name": "vitely",
   "version": "1.0.0",
   "license": "MIT",
-  "description": "Ultimate Vite, starter vite project",
+  "description": "Vitely, starter vite project",
   "scripts": {
     "dev": "vite --open --host",
     "build": "vite build",
@@ -20,10 +20,11 @@
     "vfonts": "^0.0.3",
     "vue": "^3.2.28",
     "vue-i18n": "^9.2.0-beta.26",
-    "vue-router": "^4.0.12"
+    "vue-router": "^4.0.12",
+    "@vueuse/core": "^7.5.4",
+    "@vueuse/head": "^0.7.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.12",
     "@iconify-json/bx": "^1.0.3",
     "@iconify-json/carbon": "^1.0.14",
     "@intlify/vite-plugin-vue-i18n": "^3.2.1",
@@ -35,8 +36,6 @@
     "@unocss/preset-icons": "^0.22.5",
     "@unocss/preset-uno": "^0.22.5",
     "@vitejs/plugin-vue": "^2.1.0",
-    "@vueuse/core": "^7.5.4",
-    "babel-loader": "^8.2.3",
     "eslint": "^8.7.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-vue": "^8.3.0",
@@ -55,7 +54,6 @@
     "vite-plugin-remove-console": "^0.0.6",
     "vite-plugin-webfont-dl": "^1.0.7",
     "vite-svg-loader": "^3.1.2",
-    "vue-loader": "^16.8.3",
     "vue-tsc": "^0.31.1"
   }
 }

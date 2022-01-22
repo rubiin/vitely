@@ -1,29 +1,3 @@
-<script lang="ts">
-import { useTheme } from '/@/composables';
-
-export default defineComponent({
-  name: 'Home',
-  setup() {
-    const { t, availableLocales, locale } = useI18n();
-
-    const toggleLocales = () => {
-      const locales = availableLocales;
-      locale.value =
-        locales[(locales.indexOf(locale.value) + 1) % locales.length];
-    };
-
-    const { toggleDark } = useTheme();
-
-    const show = ref(false);
-
-    setTimeout(() => {
-      show.value = true;
-    }, 1000);
-
-    return { t, show, toggleLocales, toggleDark };
-  },
-});
-</script>
 <template>
   <div class="container max-w-3xl mx-auto mt-60">
     <div class="h-60 mb-8">
@@ -94,6 +68,24 @@ export default defineComponent({
     </footer>
   </div>
 </template>
+
+<script setup lang="ts">
+import { useTheme } from '/@/composables';
+const { t, availableLocales, locale } = useI18n();
+
+const toggleLocales = () => {
+  const locales = availableLocales;
+  locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length];
+};
+
+const { toggleDark } = useTheme();
+
+const show = ref(false);
+
+setTimeout(() => {
+  show.value = true;
+}, 1000);
+</script>
 
 <style>
 a,
