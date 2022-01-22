@@ -98,7 +98,7 @@ export default defineComponent({
 <style>
 a,
 .footer-link {
-  transition: all 0.1s ease-out;
+  transition: all 5s ease-out;
 }
 li {
   list-style: none;

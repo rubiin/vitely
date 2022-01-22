@@ -60,7 +60,7 @@ export default defineComponent({
 
 <style scoped>
 a {
-  transition: all 100ms ease-out;
+  transition: all 5s ease-out;
 }
 
 label {
