@@ -21,6 +21,7 @@ This template should help get you started developing with Vue 3 and Typescript i
 - 🔥 Use the [new `<script setup>` syntax](https://github.com/vuejs/rfcs/pull/227)
 - Import svgs as components using (https://github.com/jpkleemans/vite-svg-loader)
 - 🦾 TypeScript, of course
+- Manual vendor chunks 
 - Deploy on Netlify
 
 <p align='center'><a href="https://vitely.vercel.app"> Live Demo</a><p>

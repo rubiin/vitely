@@ -15,7 +15,7 @@ import svgLoader from 'vite-svg-loader';
 import path from 'path';
 
 export default defineConfig(({ mode }) => {
-  const isDev = mode === 'development';
+  const isDev = mode === 'dev';
   const isReport = mode === 'report';
 
   let optimizeDeps = {};
@@ -134,7 +134,14 @@ export default defineConfig(({ mode }) => {
         output: {
           manualChunks(id) {
             if (id.includes('/node_modules/')) {
-              const modules = ['quasar', '@quasar', 'vue', '@vue'];
+              const modules = [
+                'vue',
+                'naive-ui',
+                '@vueuse/core',
+                'vue-i18n',
+                'vue-router',
+                'pinia',
+              ];
               const chunk = modules.find(module =>
                 id.includes(`/node_modules/${module}`),
               );
