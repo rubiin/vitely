@@ -1,9 +1,9 @@
-import { useStorage } from "@vueuse/core";
-import {  } from "vue-router";
-import { IRoute } from "../interface/router";
+import { useStorage } from '@vueuse/core';
+import {} from 'vue-router';
+import { IRoute } from '../interface/router';
 
 export const auth = (to: IRoute, from: IRoute, next: Function) => {
-  const token = useStorage('accessToken',null);
+  const token = useStorage('accessToken', null);
   const publicPages = [
     '/login',
     '/forgot-password',

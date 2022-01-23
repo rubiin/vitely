@@ -19,11 +19,11 @@ This template should help get you started developing with Vue 3 and Typescript i
 - 🍍 [State Management via Pinia](https://pinia.esm.dev/)
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
 - 🔥 Use the [new `<script setup>` syntax](https://github.com/vuejs/rfcs/pull/227)
-- 
+- Import svgs as components using (https://github.com/jpkleemans/vite-svg-loader)
 - 🦾 TypeScript, of course
 - Deploy on Netlify
 
-<p align='center'><a href="https://vitely-rubiin.vercel.app"> Live Demo</a><p>
+<p align='center'><a href="https://vitely.vercel.app"> Live Demo</a><p>
 
 ## Pre-📦
 

@@ -10,20 +10,35 @@ import PurgeIcons from 'vite-plugin-purge-icons';
 import compress from 'vite-plugin-compress';
 import clearConsole from 'vite-plugin-remove-console';
 import { ViteWebfontDownload } from 'vite-plugin-webfont-dl';
+import ViteVisualizer from 'rollup-plugin-visualizer';
+import svgLoader from 'vite-svg-loader';
 import path from 'path';
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  server: {
-    port: 4000,
-  },
-  resolve: {
-    alias: {
-      '/@': path.resolve(__dirname, './src'),
-    },
-  },
-  plugins: [
+export default defineConfig(({ mode }) => {
+  const isDev = mode === 'development';
+  const isReport = mode === 'report';
+
+  let optimizeDeps = {};
+  if (isDev) {
+    /**
+     * DESC:
+     * dependency pre-bundling
+     */
+    optimizeDeps = {
+      include: [
+        'vue',
+        'naive-ui',
+        'vue-router',
+        'pinia',
+        '@vueuse/core',
+        'vue-i18n',
+      ],
+    };
+  }
+
+  const plugins = [
     vue(),
+    svgLoader(),
     Unocss({
       shortcuts: [
         [
@@ -58,14 +73,21 @@ export default defineConfig({
         /\.vue\?vue/, // .vue
         /\.md$/, // .md
       ],
-      imports: ['vue', '@vueuse/core', 'pinia', 'vee-validate', 'vue-i18n',"@vueuse/head"],
+      imports: [
+        'vue',
+        '@vueuse/core',
+        'pinia',
+        'vee-validate',
+        'vue-i18n',
+        '@vueuse/head',
+      ],
     }),
     Components({
       extensions: ['vue'],
       directoryAsNamespace: true,
       globalNamespaces: ['global'],
       importPathTransform: path =>
-      path.endsWith('.svg') ? `${path}?component` : undefined,
+        path.endsWith('.svg') ? `${path}?component` : undefined,
       include: [/\.vue$/, /\.md$/],
     }),
     ViteWebfontDownload([
@@ -81,7 +103,48 @@ export default defineConfig({
     VueI18n({
       include: [path.resolve(__dirname, './locales/**')],
     }),
-  ],
-  
- 
+  ];
+
+  if (isReport) {
+    plugins.push(
+      /**
+       * DESC:
+       * visualize bundle
+       */
+      ViteVisualizer({
+        filename: './dist/report.html',
+        open: true,
+        brotliSize: true,
+      }),
+    );
+  }
+
+  return {
+    server: {
+      port: 4000,
+    },
+    resolve: {
+      alias: {
+        '/@': path.resolve(__dirname, './src'),
+      },
+    },
+    build: {
+      chunkSizeWarningLimit: 1024,
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            if (id.includes('/node_modules/')) {
+              const modules = ['quasar', '@quasar', 'vue', '@vue'];
+              const chunk = modules.find(module =>
+                id.includes(`/node_modules/${module}`),
+              );
+              return chunk ? `vendor-${chunk}` : 'vendor';
+            }
+          },
+        },
+      },
+    },
+    plugins,
+    optimizeDeps,
+  };
 });
