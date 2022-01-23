@@ -3464,7 +3464,7 @@
     "@vue/compiler-dom" "3.2.28"
     "@vue/shared" "3.2.28"
 
-"@vue/devtools-api@^6.0.0-beta.13", "@vue/devtools-api@^6.0.0-beta.18", "@vue/devtools-api@^6.0.0-beta.21":
+"@vue/devtools-api@^6.0.0-beta.13", "@vue/devtools-api@^6.0.0-beta.15", "@vue/devtools-api@^6.0.0-beta.18", "@vue/devtools-api@^6.0.0-beta.21":
   version "6.0.0-beta.21.1"
   resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.0.0-beta.21.1.tgz#f1410f53c42aa67fa3b01ca7bdba891f69d7bc97"
   integrity sha512-FqC4s3pm35qGVeXRGOjTsRzlkJjrBLriDS9YXbflHLsfA9FrcKzIyWnLXoNm+/7930E8rRakXuAc2QkC50swAw==
@@ -4187,13 +4187,6 @@ aws4@^1.8.0:
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.11.0.tgz#d61f46d83b2519250e2784daf5b09479a8b41c59"
   integrity sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==
-
-axios@^0.21:
-  version "0.21.4"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
-  integrity sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==
-  dependencies:
-    follow-redirects "^1.14.0"
 
 axios@^0.21.1:
   version "0.21.1"
@@ -7475,7 +7468,7 @@ follow-redirects@^1.10.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.1.tgz#d9114ded0a1cfdd334e164e6662ad02bfd91ff43"
   integrity sha512-HWqDgT7ZEkqRzBvc2s64vSZ/hfOceEol3ac/7tKwzuvEyWx3/4UegXh5oBOIotkGsObyk3xznnSRVADBgWSQVg==
 
-follow-redirects@^1.14.0, follow-redirects@^1.14.4, follow-redirects@^1.14.7:
+follow-redirects@^1.14.4, follow-redirects@^1.14.7:
   version "1.14.7"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.7.tgz#2004c02eb9436eee9a21446a6477debf17e81685"
   integrity sha512-+hbxoLbFMbRKDwohX8GkTataGqO6Jb7jGwpAlwgy2bIz25XtRm7KEzJM76R1WiNT5SwZkX4Y75SwBolkpmE7iQ==
@@ -14102,6 +14095,13 @@ vdirs@^0.1.4, vdirs@^0.1.7:
   dependencies:
     evtd "^0.2.2"
 
+vee-validate@^4.5.7:
+  version "4.5.7"
+  resolved "https://registry.yarnpkg.com/vee-validate/-/vee-validate-4.5.7.tgz#457f1621cf978a3f7eac4866faa480e020981867"
+  integrity sha512-EcpvOikBP5LlRIKwULfwRDeyIaERuOJztZUPWRmSIeWpeQWD6hs9qQ8A3CmVVteqEohbUM07gV/ea8lPXCfCJQ==
+  dependencies:
+    "@vue/devtools-api" "^6.0.0-beta.15"
+
 verror@1.10.0:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/verror/-/verror-1.10.0.tgz#3a105ca17053af55d6e270c1f8288682e18da400"
@@ -14161,6 +14161,11 @@ vite-plugin-compress@^2.1.0:
     recrawl-sync "^2.0.2"
     svgo "^1.3.2"
 
+vite-plugin-fonts@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/vite-plugin-fonts/-/vite-plugin-fonts-0.2.2.tgz#48cda78f5ad36907f3de497fa418ffd2b8f2ca83"
+  integrity sha512-fhzhsrTiuzlDjSO6g5sV5EVIIvbb8lmsaIY6eUTBM4lcF55x40UBpHrcyvNwIhQG211g0lu83XC7oZlkmvdkMA==
+
 vite-plugin-mdx@^3.5.6:
   version "3.5.10"
   resolved "https://registry.yarnpkg.com/vite-plugin-mdx/-/vite-plugin-mdx-3.5.10.tgz#6c1f3a5b2216f059d43fe42c8c7148a399c2c136"
@@ -14196,13 +14201,6 @@ vite-plugin-remove-console@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/vite-plugin-remove-console/-/vite-plugin-remove-console-0.0.6.tgz#1e6ba29c76a9c067723f29af1da725b6070ec161"
   integrity sha512-nwzYfkk320uO9sYBCql6rTE/07cjhffnHjayHXLdeDDQD6nGwmuqvBB1YWHlvIeboKr/caMdkpZpE7pM5kk2fw==
-
-vite-plugin-webfont-dl@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/vite-plugin-webfont-dl/-/vite-plugin-webfont-dl-1.0.7.tgz#441a646a2b2e414e70944b873f9f0e41ceaad7c3"
-  integrity sha512-86Rm5AoiyE+iV6Woqu09dGSnbRjqQqsWth7U4eiN1wY+uhQSWVc0rC+GKA1SeowxQhhietsy87y3npcehW3IGQ==
-  dependencies:
-    axios "^0.21"
 
 vite-svg-loader@^3.1.2:
   version "3.1.2"

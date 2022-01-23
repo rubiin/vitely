@@ -1,4 +1,4 @@
-<p align='center'><img width="300px" style="display:block; margin:0 auto;" src="https://res.cloudinary.com/alvarosaburido/image/upload/v1621848301/projects/vitesome/logotype_zq9g5i.png" alt="Vitely - Vue3 + Vite template starter">
+<p align='center'><img width="300px" style="display:block; margin:0 auto;" src="https://i.imgur.com/qWH4gup.png" alt="Vitely - Vue3 + Vite template starter">
 </p>
 
 # Vitely 🌬 ⛵️
@@ -21,7 +21,7 @@ This template should help get you started developing with Vue 3 and Typescript i
 - 🔥 Use the [new `<script setup>` syntax](https://github.com/vuejs/rfcs/pull/227)
 - Import svgs as components using (https://github.com/jpkleemans/vite-svg-loader)
 - 🦾 TypeScript, of course
-- Manual vendor chunks 
+- Manual vendor chunks
 - Deploy on Netlify
 
 <p align='center'><a href="https://vitely.vercel.app"> Live Demo</a><p>

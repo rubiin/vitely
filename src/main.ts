@@ -3,7 +3,7 @@ import App from './App.vue';
 import '@purge-icons/generated';
 import { createI18n } from 'vue-i18n';
 
-import './styles/base.css';
+import './styles/base.scss';
 import { createPinia } from 'pinia';
 
 import axios from './axios/axios';

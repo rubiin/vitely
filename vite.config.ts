@@ -6,10 +6,9 @@ import Unocss from 'unocss/vite';
 import presetUno from '@unocss/preset-uno';
 import presetIcons from '@unocss/preset-icons';
 import VueI18n from '@intlify/vite-plugin-vue-i18n';
-import PurgeIcons from 'vite-plugin-purge-icons';
 import compress from 'vite-plugin-compress';
 import clearConsole from 'vite-plugin-remove-console';
-import { ViteWebfontDownload } from 'vite-plugin-webfont-dl';
+import ViteFonts from 'vite-plugin-fonts';
 import ViteVisualizer from 'rollup-plugin-visualizer';
 import svgLoader from 'vite-svg-loader';
 import path from 'path';
@@ -90,14 +89,13 @@ export default defineConfig(({ mode }) => {
         path.endsWith('.svg') ? `${path}?component` : undefined,
       include: [/\.vue$/, /\.md$/],
     }),
-    ViteWebfontDownload([
-      'https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap',
-      'https://fonts.googleapis.com/css2?family=Fira+Code&display=swap',
-    ]),
-    // https://github.com/antfu/purge-icons/tree/main/packages/vite-plugin-purge-icons
-    PurgeIcons({
-      /* PurgeIcons Options */
+
+    ViteFonts({
+      google: {
+        families: ['Poppins'],
+      },
     }),
+
 
     // https://github.com/intlify/vite-plugin-vue-i18n
     VueI18n({

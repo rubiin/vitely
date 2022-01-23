@@ -3,18 +3,13 @@
     <div class="h-60 mb-8">
       <transition
         enter-active-class="transition ease-out duration-1000 transform"
-        enter-from-class="-translate-x-100 opacity-0"
+        enter-from-class="-translate-x-200 opacity-0"
         enter-to-class="translate-x-0 opacity-100"
         leave-active-class="transition ease-in duration-1000 transform"
         leave-from-class="opacity-100"
         leave-to-class="opacity-0"
       >
-        <img
-          v-if="show"
-          alt="Vitesome logo"
-          class="w-52 mx-auto mb-12"
-          :src="'imagotype.svg'"
-        />
+        <logo-component v-if="show" class="w-52 mx-auto mb-12"></logo-component>
       </transition>
     </div>
 
@@ -70,6 +65,7 @@
 </template>
 
 <script setup lang="ts">
+import LogoComponent from '/@/assets/imagotype.svg?component';
 import { useTheme } from '/@/composables';
 const { t, availableLocales, locale } = useI18n();
 
@@ -79,6 +75,11 @@ const toggleLocales = () => {
 };
 
 const { toggleDark } = useTheme();
+
+
+onMounted(() => {
+ document.body.classList.add('dark:bg-gray-800','dark:text-gray-200')
+});
 
 const show = ref(false);
 
