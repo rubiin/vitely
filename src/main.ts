@@ -6,6 +6,8 @@ import { createI18n } from 'vue-i18n';
 import './styles/base.css';
 import { createPinia } from 'pinia';
 
+import axios from './axios/axios';
+
 // Router
 import { Router } from '/@/router';
 
@@ -21,6 +23,8 @@ const i18n = createI18n({
   locale: 'en',
   messages,
 });
+
+app.config.globalProperties.$http = axios;
 
 app.use(i18n);
 

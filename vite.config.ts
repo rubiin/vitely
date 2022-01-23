@@ -58,14 +58,14 @@ export default defineConfig({
         /\.vue\?vue/, // .vue
         /\.md$/, // .md
       ],
-      imports: ['vue', '@vueuse/core', 'pinia', 'vee-validate', 'vue-i18n'],
+      imports: ['vue', '@vueuse/core', 'pinia', 'vee-validate', 'vue-i18n',"@vueuse/head"],
     }),
     Components({
       extensions: ['vue'],
       directoryAsNamespace: true,
       globalNamespaces: ['global'],
       importPathTransform: path =>
-        path.endsWith('.svg') ? `${path}?component` : undefined,
+      path.endsWith('.svg') ? `${path}?component` : undefined,
       include: [/\.vue$/, /\.md$/],
     }),
     ViteWebfontDownload([
