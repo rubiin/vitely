@@ -92,10 +92,9 @@ export default defineConfig(({ mode }) => {
 
     ViteFonts({
       google: {
-        families: ['Poppins'],
+        families: ['Poppins', 'Montserrat'],
       },
     }),
-
 
     // https://github.com/intlify/vite-plugin-vue-i18n
     VueI18n({
