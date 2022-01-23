@@ -1,10 +1,13 @@
 body {
   font-family: 'Poppins', sans-serif !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
   text-align: center;
 }
 
-h1{
+h1 {
   font-family: 'Montserrat', sans-serif !important;
+}
+
+h1 {
+  font-size: 20px;
 }

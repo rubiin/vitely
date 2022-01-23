@@ -7,11 +7,13 @@ import presetUno from '@unocss/preset-uno';
 import presetIcons from '@unocss/preset-icons';
 import VueI18n from '@intlify/vite-plugin-vue-i18n';
 import compress from 'vite-plugin-compress';
-import clearConsole from 'vite-plugin-remove-console';
 import ViteFonts from 'vite-plugin-fonts';
-import ViteVisualizer from 'rollup-plugin-visualizer';
 import svgLoader from 'vite-svg-loader';
+import ViteVisualizer from 'rollup-plugin-visualizer';
+import strip from '@rollup/plugin-strip';
 import path from 'path';
+import autoprefixer from 'autoprefixer';
+import combineSelectors from 'postcss-combine-duplicated-selectors';
 
 export default defineConfig(({ mode }) => {
   const isDev = mode === 'dev';
@@ -29,14 +31,19 @@ export default defineConfig(({ mode }) => {
         'naive-ui',
         'vue-router',
         'pinia',
-        '@vueuse/core',
         'vue-i18n',
+        'vee-validate',
+        '@vue/shared',
+        '@vue/runtime-core',
+        '@vueuse/core',
+        '@vueuse/head',
       ],
     };
   }
 
   const plugins = [
     vue(),
+    strip(),
     svgLoader(),
     Unocss({
       shortcuts: [
@@ -51,7 +58,6 @@ export default defineConfig(({ mode }) => {
       ],
       presets: [
         presetUno(),
-        clearConsole(),
         compress({
           brotli: true,
           verbose: true,
@@ -74,10 +80,11 @@ export default defineConfig(({ mode }) => {
       ],
       imports: [
         'vue',
-        '@vueuse/core',
         'pinia',
         'vee-validate',
+        'vue-router',
         'vue-i18n',
+        '@vueuse/core',
         '@vueuse/head',
       ],
     }),
@@ -126,7 +133,9 @@ export default defineConfig(({ mode }) => {
       },
     },
     build: {
+      minify: true,
       chunkSizeWarningLimit: 1024,
+      sourcemap: false,
       rollupOptions: {
         output: {
           manualChunks(id) {
@@ -148,6 +157,12 @@ export default defineConfig(({ mode }) => {
         },
       },
     },
+    css: {
+      postcss: {
+        plugins: [autoprefixer(), combineSelectors()],
+      },
+    },
+
     plugins,
     optimizeDeps,
   };
