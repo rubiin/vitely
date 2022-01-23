@@ -21,7 +21,7 @@
           <a
             href="#"
             @click="toggleLocales"
-            class="footer-link text-cyan-700 hover:text-cyan-500"
+            class="footer-link text-cyan-600"
             :title="t('toggle_language')"
           >
             <i class="iconify" :data-icon="'ant-design:translation-outlined'" />
@@ -31,7 +31,7 @@
           <a
             href="#"
             @click="toggleDark"
-            class="text-cyan-700 hover:text-cyan-500"
+            class="text-cyan-600"
             :title="t('toggle_theme')"
           >
             <i class="iconify" :data-icon="'mdi:theme-light-dark'" />
@@ -42,7 +42,7 @@
             href="https://github.com/rubiin"
             rel="noreferrer"
             target="_blank"
-            class="footer-link text-cyan-700 hover:text-cyan-500"
+            class="footer-link text-cyan-600"
             title="Github repo"
           >
             <i class="iconify" :data-icon="'mdi:github'" />
@@ -76,9 +76,8 @@ const toggleLocales = () => {
 
 const { toggleDark } = useTheme();
 
-
 onMounted(() => {
- document.body.classList.add('dark:bg-gray-800','dark:text-gray-200')
+  document.body.classList.add('dark:bg-gray-800', 'dark:text-gray-200');
 });
 
 const show = ref(false);
@@ -100,4 +99,5 @@ li {
 .footer-link {
   opacity: 0.8;
 }
+
 </style>

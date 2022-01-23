@@ -41,10 +41,7 @@
 
 <script setup lang="ts">
 defineProps<{
-  msg: {
-    type: string;
-    required: true;
-  };
+  msg: string
 }>();
 
 const { t } = useI18n();
