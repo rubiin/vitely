@@ -9,7 +9,10 @@
         leave-from-class="opacity-100"
         leave-to-class="opacity-0"
       >
-        <logo-component v-if="show" class="w-52 mx-auto mb-12"></logo-component>
+        <logo-component
+          v-if="show"
+          class="w-52 mx-auto mb-12"
+        ></logo-component>
       </transition>
     </div>
 
@@ -20,9 +23,9 @@
         <li class="cursor-pointer text-2xl">
           <a
             href="#"
-            @click="toggleLocales"
             class="footer-link text-cyan-600"
             :title="t('toggle_language')"
+            @click="toggleLocales"
           >
             <i class="i-carbon-translate dark:i-carbon-translate" />
           </a>
@@ -30,9 +33,9 @@
         <li class="cursor-pointer text-2xl">
           <a
             href="#"
-            @click="toggleDark"
             class="text-cyan-600"
             :title="t('toggle_theme')"
+            @click="toggleDark"
           >
             <i class="i-carbon-sun dark:i-carbon-moon" />
           </a>
@@ -50,16 +53,13 @@
         </li>
       </ul>
 
-      <span class="text-xs"
-        >{{ t('made_by') }}
+      <span class="text-xs">{{ t('made_by') }}
         <a
           class="footer-link text-cyan-400 hover:text-cyan-500"
           href="https://github.com/rubiin"
           rel="noreferrer"
           target="_blank"
-          >Rubiin</a
-        ></span
-      >
+        >Rubiin</a></span>
     </footer>
   </div>
 </template>

@@ -27,23 +27,23 @@
       </div>
       <div>
         <my-button
-          size="small"
-          @click="$emit('logout')"
-          label="Log out"
           v-if="user"
-        />
-        <my-button
           size="small"
-          @click="$emit('login')"
-          label="Log in"
-          v-if="!user"
+          label="Log out"
+          @click="$emit('logout')"
         />
         <my-button
+          v-if="!user"
+          size="small"
+          label="Log in"
+          @click="$emit('login')"
+        />
+        <my-button
+          v-if="!user"
           primary
           size="small"
-          @click="$emit('createAccount')"
           label="Sign up"
-          v-if="!user"
+          @click="$emit('createAccount')"
         />
       </div>
     </div>
@@ -55,7 +55,7 @@ import './header.css';
 import MyButton from './Button.vue';
 
 export default {
-  name: 'my-header',
+  name: 'MyHeader',
 
   components: { MyButton },
 

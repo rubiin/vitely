@@ -29,7 +29,9 @@
     "test:e2e": "cypress open",
     "test:unit": "vitest",
     "preview-https": "serve dist - 8080",
-    "report": "vite build --mode report"
+    "report": "vite build --mode report",
+    "stylelint": "stylelint --config stylelintrc.json 'src/**/*.{vue,scss}'",
+    "stylelint:fix": "stylelint --config stylelintrc.json --fix 'src/**/*.{vue,scss}'"
   },
   "dependencies": {
     "@vueuse/core": "^7.5.4",
@@ -79,6 +81,7 @@
     "serve": "^13.0.2",
     "storybook-builder-vite": "^0.1.13",
     "stylelint": "^14.3.0",
+    "stylelint-config-recommended": "^6.0.0",
     "stylelint-config-standard": "^24.0.0",
     "typescript": "^4.5.5",
     "unocss": "^0.22.5",

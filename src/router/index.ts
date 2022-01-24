@@ -1,9 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
+function lazyLoad(view: string) {
+  return () => import(`@/views/pages/${view}.vue`);
+}
+
 const routes = [
   {
     path: '/',
-    component: () => import('/@/pages/Index.vue'),
+    component: () => lazyLoad('Index'),
   },
 ];
 
