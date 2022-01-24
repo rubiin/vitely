@@ -87,7 +87,6 @@
     "vite": "^2.7.13",
     "vite-plugin-compress": "^2.1.0",
     "vite-plugin-fonts": "^0.2.2",
-    "vite-plugin-purge-icons": "^0.7.0",
     "vite-plugin-pwa": "^0.11.13",
     "vite-svg-loader": "^3.1.2",
     "vitest": "^0.2.0",

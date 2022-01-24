@@ -10,19 +10,40 @@ This template should help get you started developing with Vue 3 and Typescript i
 
 ## Features
 
-- [Vite](https://github.com/vitejs/vite) ⚡️, [Vue 3](https://github.com/vuejs/vue-next),
-- 💨 [Uno CSS](https://github.com/antfu/unocss)
+<br>
+
+## Features
+
+- ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite),[ESBuild](https://github.com/evanw/esbuild) - born with fastness
+
+
 - 📦 [Components auto importing](./src/components)
-- [i18n](https://github.com/intlify/vue-i18n-next) out of the box 👩‍🎨
-- Easy to use svg icons based on [Iconify](https://iconify.design) 🔝
-- Routing with [Vue Router 4](https://github.com/vuejs/vue-router-next)
+
 - 🍍 [State Management via Pinia](https://pinia.esm.dev/)
+
+- 📑 [Layout system](./src/layouts)
+
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
+
+- 🎨 [Uno CSS](https://github.com/antfu/unocss) - The instant on-demand Atomic CSS engine.
+
+- 😃 [Use icons from any icon sets, with no compromise](https://github.com/antfu/unocss/blob/main/packages/preset-icons/README.md)
+
+- 🌍 [I18n ready](./locales)
+
 - 🔥 Use the [new `<script setup>` syntax](https://github.com/vuejs/rfcs/pull/227)
-- Import svgs as components using (https://github.com/jpkleemans/vite-svg-loader)
+
+- 🔧 PostCSS with autoprefixer
+
+- 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - directly use Vue Composition API and others without importing
+
 - 🦾 TypeScript, of course
-- Manual vendor chunks
-- Deploy on Netlify
+
+- ⚙️ E2E Testing with [Cypress](https://cypress.io/) on [GitHub Actions](https://github.com/features/actions)
+
+- ☁️ Deploy on Netlify, zero-config
+
+<br>
 
 <p align='center'><a href="https://vitely.vercel.app"> Live Demo</a><p>
 
@@ -33,26 +54,28 @@ This repo brings few things pre-packed, so you don't need to install them manual
 ### Styling
 
 - [Uno CSS](https://github.com/antfu/unocss) with [`vite-plugin-windicss`](https://github.com/antfu/unocss)
-- Default [Google Fonts](https://github.com/stafyniaksacha/vite-plugin-fonts#readme) with `vite-plugin-webfont-dl`
+- PostCss with plugins support
+- Default [Google Fonts](https://github.com/stafyniaksacha/vite-plugin-fonts#readme) with `vite-plugin-fonts`
 
 ### Icons
 
-- [PurgeIcons](https://github.com/antfu/purge-icons) with [`vite-plugin-purge-icons](vite-plugin-purge-icons) Think about TailwindCSS + PurgeCSS, but for Icons.
+- `uno-iconify` Use any icon pack of your liking
 - Custom icons below `./assets/icons` with
 
 ### Plugins
 
-- [Vue Router](https://github.com/vuejs/vue-router)
-- [Pinia](https://pinia.esm.dev) - Intuitive, type safe, light and flexible Store for Vue using the composition api
+- [`@vueuse/head`](https://github.com/vueuse/head) - manipulate document head reactively
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - components auto import
 - [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - Directly use Vue Composition API and others without importing
-- [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa) - PWA
-- [Vue I18n](https://github.com/intlify/vue-i18n-next) - Internationalization
+- [`vite-plugin-compress`](https://github.com/alloc/vite-plugin-compress) - Compress your bundle + assets from Vite
 - [`vite-plugin-vue-i18n`](https://github.com/intlify/vite-plugin-vue-i18n) - Vite plugin for Vue I18n
+- [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa) - PWA
+- [`rollup-plugin-visualizer`](https://github.com/antfu/vite-plugin-pwa) - visualize and analyze your bundle to see which modules are taking up space.
+- [`@rollup/plugin-strip`](https://github.com/antfu/vite-plugin-pwa) - remove debugger statements and functions like assert.equal and console.log from your code
+- [Vue I18n](https://github.com/intlify/vue-i18n-next) - Internationalization
+- [Vue Router](https://github.com/vuejs/vue-router)
+- [Pinia](https://pinia.esm.dev) - Intuitive, type safe, light and flexible Store for Vue using the composition api
 - [VueUse](https://github.com/antfu/vueuse) - collection of useful composition APIs
-- [`@vueuse/head`](https://github.com/vueuse/head) - manipulate document head reactively
-- [vite-plugin-compress](https://github.com/alloc/vite-plugin-compress) - Compress your bundle + assets from Vite
-- [vite-plugin-compress](https://github.com/alloc/vite-plugin-compress) - Compress your bundle + assets from Vite
 
 ### Coding Style
 
@@ -69,7 +92,7 @@ yarn
 yarn dev
 ```
 
-This will serve the app at [http://localhost:3260](http://localhost:3260)
+This will serve the app at [http://localhost:4000](http://localhost:4000)
 
 ### Build it
 
@@ -88,6 +111,7 @@ See the section about [deployment](#deployment) for more information.
 ### Deployment
 
 Visit [Netlify](https://app.netlify.com/start) and select your repo, select OK along the way, and your App will be live in a minute.
+Visit [Vercel](https://vercel) and select your repo, select OK along the way, and your App will be live in a minute.
 
 ## Recommended IDE Setup
 
