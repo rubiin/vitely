@@ -1373,6 +1373,13 @@
   dependencies:
     "@iconify/types" "^1.0.10"
 
+"@iconify-json/carbon@^1.0.14":
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/@iconify-json/carbon/-/carbon-1.0.14.tgz#209c337e17e5faf3cfe6c14ae4cafa516b04d761"
+  integrity sha512-nPJtOG2wmGwSek4wFoQWOecQKhIuav2qBFXqDWQl+vfqwqwCEYloUrFzedqhwhFv1AO/P81CY+F919YuYWgCXA==
+  dependencies:
+    "@iconify/types" "^1.0.10"
+
 "@iconify/types@^1.0.10", "@iconify/types@^1.0.12":
   version "1.0.12"
   resolved "https://registry.yarnpkg.com/@iconify/types/-/types-1.0.12.tgz#839f1f784b7030b94482d51996570f4dbd7d6796"
@@ -9881,7 +9888,7 @@ ms@2.1.3, ms@^2.1.1:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.3.tgz#574c8138ce1d2b5861f0b44579dbadd60c6615b2"
   integrity sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
 
-naive-ui@^2.24.1:
+naive-ui@^2.24.4:
   version "2.24.4"
   resolved "https://registry.yarnpkg.com/naive-ui/-/naive-ui-2.24.4.tgz#596d84208cd08d814c76dddd783aae4753116819"
   integrity sha512-lTtdiT4yVazRUCofXJvfuWB/ntsLRTWhNAl8PW+ZGzoMgGAmn9yXcnJBe6X8LdfA+UsPDLaZ8E4Qi6wLXJMUlg==
@@ -10712,7 +10719,7 @@ pify@^4.0.1:
   resolved "https://registry.yarnpkg.com/pify/-/pify-4.0.1.tgz#4b2cd25c50d598735c50292224fd8c6df41e3231"
   integrity sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==
 
-pinia-plugin-persistedstate@^1.0.3:
+pinia-plugin-persistedstate@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/pinia-plugin-persistedstate/-/pinia-plugin-persistedstate-1.1.0.tgz#83df13de70926cac1f9d1c71b36ecab232151326"
   integrity sha512-60O76TKuIoFwEkVvUVScAYNBTR2N9wrLP+CRa12vF7oM8/35bBb8mzNnV8QGkOodsQgje1EeBvFP4YwKbZ8Q+w==
@@ -13978,10 +13985,10 @@ vite@>=2.7.13, vite@^2.7.13:
   optionalDependencies:
     fsevents "~2.3.2"
 
-vitest@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/vitest/-/vitest-0.2.0.tgz#0270689a85f2aa3483fe44939f9602bd859deead"
-  integrity sha512-+8c0UN/KKQe/ye0CCCqYuPbOEZl12Fhb5hVkCiL2DdBA4jOEgHDd35AZqdHVBXaAoTedS3MD5G/LhkOxCWB8pw==
+vitest@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/vitest/-/vitest-0.2.1.tgz#edcb9589ffcedc927c7458ab33be4c9d9140596c"
+  integrity sha512-9tk436ZwXXykce3XagiBc97DaSWghoJqlnbWDm2Q52JFPVmD9iaBuvbWgVhLElREHinzPPtI/RhcCrHV3/0olg==
   dependencies:
     "@types/chai" "^4.3.0"
     "@types/chai-subset" "^1.3.3"

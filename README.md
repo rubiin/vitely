@@ -16,7 +16,6 @@ This template should help get you started developing with Vue 3 and Typescript i
 
 - ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite),[ESBuild](https://github.com/evanw/esbuild) - born with fastness
 
-
 - 📦 [Components auto importing](./src/components)
 
 - 🍍 [State Management via Pinia](https://pinia.esm.dev/)

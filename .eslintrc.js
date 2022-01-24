@@ -17,11 +17,7 @@ module.exports = {
 
   plugins: ['@typescript-eslint', 'vue'],
 
-  extends: [
-    'standard',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:vue/recommended',
-  ],
+  extends: ['plugin:@typescript-eslint/recommended', 'plugin:vue/recommended'],
 
   rules: {
     /**

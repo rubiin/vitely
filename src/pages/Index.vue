@@ -24,7 +24,7 @@
             class="footer-link text-cyan-600"
             :title="t('toggle_language')"
           >
-            <i class="iconify" :data-icon="'ant-design:translation-outlined'" />
+            <i class="i-carbon-translate dark:i-carbon-translate" />
           </a>
         </li>
         <li class="cursor-pointer text-2xl">
@@ -34,7 +34,7 @@
             class="text-cyan-600"
             :title="t('toggle_theme')"
           >
-            <i class="iconify" :data-icon="'mdi:theme-light-dark'" />
+            <i class="i-carbon-sun dark:i-carbon-moon" />
           </a>
         </li>
         <li class="cursor-pointer text-2xl">
@@ -45,7 +45,7 @@
             class="footer-link text-cyan-600"
             title="Github repo"
           >
-            <i class="iconify" :data-icon="'mdi:github'" />
+            <i class="i-carbon-logo-github dark:i-carbon-logo-github" />
           </a>
         </li>
       </ul>

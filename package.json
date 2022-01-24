@@ -35,9 +35,9 @@
     "@vueuse/core": "^7.5.4",
     "@vueuse/head": "^0.7.5",
     "axios": "^0.25.0",
-    "naive-ui": "^2.24.1",
+    "naive-ui": "^2.24.4",
     "pinia": "^2.0.9",
-    "pinia-plugin-persistedstate": "^1.0.3",
+    "pinia-plugin-persistedstate": "^1.1.0",
     "vee-validate": "^4.5.7",
     "vfonts": "^0.0.3",
     "vue": "^3.2.28",
@@ -46,6 +46,7 @@
   },
   "devDependencies": {
     "@iconify-json/bx": "^1.0.3",
+    "@iconify-json/carbon": "^1.0.14",
     "@intlify/vite-plugin-vue-i18n": "^3.2.1",
     "@rollup/plugin-strip": "^2.1.0",
     "@storybook/addon-actions": "^6.5.0-alpha.22",
@@ -88,7 +89,7 @@
     "vite-plugin-fonts": "^0.2.2",
     "vite-plugin-pwa": "^0.11.13",
     "vite-svg-loader": "^3.1.2",
-    "vitest": "^0.2.0",
+    "vitest": "^0.2.1",
     "vue-tsc": "^0.31.1"
   },
   "engines": {
