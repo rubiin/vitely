@@ -1,6 +1,9 @@
 <p align='center'><img width="300px" style="display:block; margin:0 auto;" src="https://i.imgur.com/qWH4gup.png" alt="Vitely - Vue3 + Vite template starter">
 </p>
 
+
+[![CI](https://github.com/rubiin/vitely/actions/workflows/sample.yml/badge.svg)](https://github.com/rubiin/vitely/actions/workflows/sample.yml)
+
 # Vitely 🌬 ⛵️
 
 > A simple opinionated Vue3 Starter Template with [Vite.js](https://vitejs.dev/)
