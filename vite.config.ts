@@ -143,6 +143,7 @@ export default defineConfig(({ mode }) => {
               const modules = [
                 'vue',
                 'naive-ui',
+                'vee-validate',
                 '@vueuse/core',
                 'vue-i18n',
                 'vue-router',
