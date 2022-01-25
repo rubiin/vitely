@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite';
+import { defineConfig, loadEnv } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
@@ -19,6 +19,9 @@ import { VitePWA } from 'vite-plugin-pwa';
 export default defineConfig(({ mode }) => {
   const isDev = mode === 'dev';
   const isReport = mode === 'report';
+
+  // loads environment variables from .env file and exposes them to process.env
+  process.env = { ...process.env, ...loadEnv(mode, './env') };
 
   let optimizeDeps = {};
   if (isDev) {
@@ -153,7 +156,7 @@ export default defineConfig(({ mode }) => {
 
   return {
     server: {
-      port: 4000,
+      port: +process.env.VITE_APP_PORT || 4000,
     },
     resolve: {
       alias: {
@@ -191,7 +194,7 @@ export default defineConfig(({ mode }) => {
         plugins: [autoprefixer(), combineSelectors()],
       },
     },
-
+    base: process.env.VITE_APP_BASE,
     plugins,
     optimizeDeps,
   };

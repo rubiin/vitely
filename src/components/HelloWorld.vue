@@ -32,11 +32,13 @@
       {{ t('more-info') }}
     </p>
     <p class="mb-10">
-      <a href="https://vitejs.dev/guide/features.html" target="_blank">
+      <a
+        href="https://vitejs.dev/guide/features.html"
+        target="_blank"
+        class="btn"
+      >
         Vite Docs
       </a>
-      |
-      <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
     </p>
   </div>
 </template>
