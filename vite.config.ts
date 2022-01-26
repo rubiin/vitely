@@ -32,11 +32,9 @@ export default defineConfig(({ mode }) => {
     optimizeDeps = {
       include: [
         'vue',
-        'naive-ui',
         'vue-router',
         'pinia',
         'vue-i18n',
-        'vee-validate',
         '@vue/shared',
         '@vue/runtime-core',
         '@vueuse/core',
@@ -173,7 +171,6 @@ export default defineConfig(({ mode }) => {
             if (id.includes('/node_modules/')) {
               const modules = [
                 'vue',
-                'naive-ui',
                 'vee-validate',
                 '@vueuse/core',
                 'vue-i18n',

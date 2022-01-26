@@ -34,14 +34,11 @@
     "stylelint:fix": "stylelint --config stylelintrc.json --fix 'src/**/*.{vue,scss}'"
   },
   "dependencies": {
-    "@vueuse/core": "^7.5.4",
+    "@vueuse/core": "^7.5.5",
     "@vueuse/head": "^0.7.5",
     "axios": "^0.25.0",
-    "naive-ui": "^2.24.5",
     "pinia": "^2.0.9",
     "pinia-plugin-persistedstate": "^1.1.0",
-    "vee-validate": "^4.5.7",
-    "vfonts": "^0.0.3",
     "vue": "^3.2.28",
     "vue-i18n": "^9.2.0-beta.26",
     "vue-router": "^4.0.12"
