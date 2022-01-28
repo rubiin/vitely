@@ -12,8 +12,6 @@ import svgLoader from 'vite-svg-loader';
 import ViteVisualizer from 'rollup-plugin-visualizer';
 import strip from '@rollup/plugin-strip';
 import path from 'path';
-import autoprefixer from 'autoprefixer';
-import combineSelectors from 'postcss-combine-duplicated-selectors';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig(({ mode }) => {
@@ -40,6 +38,7 @@ export default defineConfig(({ mode }) => {
         '@vueuse/core',
         '@vueuse/head',
       ],
+      exclude: ['vue-demi'],
     };
   }
 
@@ -184,11 +183,6 @@ export default defineConfig(({ mode }) => {
             }
           },
         },
-      },
-    },
-    css: {
-      postcss: {
-        plugins: [autoprefixer(), combineSelectors()],
       },
     },
     base: process.env.VITE_APP_BASE,
