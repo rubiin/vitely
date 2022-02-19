@@ -21,5 +21,11 @@ jobs:
       - run: yarn lint
       - run: npx lockfile-lint --path yarn.lock --allowed-hosts npm yarn --validate-https
       - run: yarn test:unit
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          build: npm run build
+          start: npm run dev
         env:
           CI: true

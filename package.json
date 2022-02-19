@@ -27,7 +27,7 @@
     "build-storybook": "build-storybook",
     "test:e2e": "cypress open",
     "test:unit": "vitest",
-    "preview-https": "serve dist - 8080",
+    "start": "serve dist - 4000",
     "report": "vite build --mode report",
     "stylelint": "stylelint --config stylelintrc.json 'src/**/*.{vue}'",
     "stylelint:fix": "stylelint --config stylelintrc.json --fix 'src/**/*.{vue}'"
@@ -43,7 +43,6 @@
     "vue-router": "^4.0.12"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.5",
     "@iconify-json/bx": "^1.1.0",
     "@iconify-json/carbon": "^1.1.1",
     "@intlify/vite-plugin-vue-i18n": "^3.3.0",
@@ -63,7 +62,6 @@
     "@unocss/preset-uno": "^0.25.0",
     "@vitejs/plugin-vue": "^2.2.2",
     "autoprefixer": "^10.4.2",
-    "babel-loader": "^8.2.3",
     "cypress": "^9.5.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.9.0",
