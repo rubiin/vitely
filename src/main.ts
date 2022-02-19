@@ -1,8 +1,6 @@
 import { createApp } from 'vue';
-import App from './App.vue';
 import { createI18n } from 'vue-i18n';
 
-import './styles/base.scss';
 import { createPinia } from 'pinia';
 
 import axios from './axios/axios';
@@ -10,11 +8,16 @@ import axios from './axios/axios';
 // Router
 import { Router } from '/@/router';
 
+import App from './App.vue';
+
 // i18n
 import messages from '@intlify/vite-plugin-vue-i18n/messages';
 
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate';
 
+// styles
+
+import './styles/base.scss';
 import 'uno.css';
 
 const app = createApp(App);

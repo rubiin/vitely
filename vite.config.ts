@@ -3,8 +3,6 @@ import vue from '@vitejs/plugin-vue';
 import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
 import Unocss from 'unocss/vite';
-import presetUno from '@unocss/preset-uno';
-import presetIcons from '@unocss/preset-icons';
 import VueI18n from '@intlify/vite-plugin-vue-i18n';
 import compress from 'vite-plugin-compress';
 import ViteFonts from 'vite-plugin-fonts';
@@ -46,32 +44,11 @@ export default defineConfig(({ mode }) => {
     vue(),
     strip(),
     svgLoader(),
-    Unocss({
-      shortcuts: [
-        [
-          'btn',
-          'px-4 py-1 rounded inline-block bg-teal-600 text-white cursor-pointer no-underline disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50 hover:bg-red-200',
-        ],
-        [
-          'icon-btn',
-          'text-[0.9em] inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-teal-600',
-        ],
-      ],
-      presets: [
-        presetUno(),
-        compress({
-          brotli: true,
-          verbose: true,
-        }),
-        presetIcons({
-          scale: 1.2,
-          extraProperties: {
-            display: 'inline-block',
-            'vertical-align': 'middle',
-          },
-        }),
-      ],
+    compress({
+      brotli: true,
+      verbose: true,
     }),
+    Unocss(),
     AutoImport({
       include: [
         /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
@@ -188,5 +165,12 @@ export default defineConfig(({ mode }) => {
     base: process.env.VITE_APP_BASE,
     plugins,
     optimizeDeps,
+    test: {
+      include: ['test/**/*.test.ts'],
+      environment: 'jsdom',
+      deps: {
+        inline: ['@vue', '@vueuse', 'vue-demi'],
+      },
+    },
   };
 });

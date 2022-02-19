@@ -20,5 +20,6 @@ jobs:
       - run: yarn build
       - run: yarn lint
       - run: npx lockfile-lint --path yarn.lock --allowed-hosts npm yarn --validate-https
+      - run: yarn test:unit
         env:
           CI: true
