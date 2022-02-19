@@ -4,7 +4,6 @@ import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
 import Unocss from 'unocss/vite';
 import VueI18n from '@intlify/vite-plugin-vue-i18n';
-import compress from 'vite-plugin-compress';
 import ViteFonts from 'vite-plugin-fonts';
 import svgLoader from 'vite-svg-loader';
 import ViteVisualizer from 'rollup-plugin-visualizer';
@@ -44,10 +43,6 @@ export default defineConfig(({ mode }) => {
     vue(),
     strip(),
     svgLoader(),
-    compress({
-      brotli: true,
-      verbose: true,
-    }),
     Unocss(),
     AutoImport({
       include: [
