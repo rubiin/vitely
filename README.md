@@ -22,8 +22,6 @@ This template should help get you started developing with Vue 3 and Typescript i
 
 - 🍍 [State Management via Pinia](https://pinia.esm.dev/)
 
-- 📑 [Layout system](./src/layouts)
-
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
 
 - 🎨 [Uno CSS](https://github.com/antfu/unocss) - The instant on-demand Atomic CSS engine.
@@ -54,8 +52,8 @@ This repo brings few things pre-packed, so you don't need to install them manual
 
 ### Styling
 
-- [Uno CSS](https://github.com/antfu/unocss) with [`vite-plugin-windicss`](https://github.com/antfu/unocss)
-- PostCss with plugins support
+- [Uno CSS](https://github.com/antfu/unocss)(https://github.com/antfu/unocss)
+- PostCSS with plugins support
 - Default [Google Fonts](https://github.com/stafyniaksacha/vite-plugin-fonts#readme) with `vite-plugin-fonts`
 
 ### Icons
@@ -73,10 +71,10 @@ This repo brings few things pre-packed, so you don't need to install them manual
 - [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa) - PWA
 - [`rollup-plugin-visualizer`](https://github.com/antfu/vite-plugin-pwa) - visualize and analyze your bundle to see which modules are taking up space.
 - [`@rollup/plugin-strip`](https://github.com/antfu/vite-plugin-pwa) - remove debugger statements and functions like assert.equal and console.log from your code
-- [Vue I18n](https://github.com/intlify/vue-i18n-next) - Internationalization
-- [Vue Router](https://github.com/vuejs/vue-router)
-- [Pinia](https://pinia.esm.dev) - Intuitive, type safe, light and flexible Store for Vue using the composition api
-- [VueUse](https://github.com/antfu/vueuse) - collection of useful composition APIs
+- [`Vue I18n`](https://github.com/intlify/vue-i18n-next) - Internationalization
+- [`Vue Router`](https://github.com/vuejs/vue-router)
+- [`Pinia`](https://pinia.esm.dev) - Intuitive, type safe, light and flexible Store for Vue using the composition api
+- [`VueUse`](https://github.com/antfu/vueuse) - collection of useful composition APIs
 
 ### Coding Style
 
