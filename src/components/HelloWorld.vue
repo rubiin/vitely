@@ -26,15 +26,43 @@
       >Volar</a>
       ({{ t('if-using') }}
       <code
+<<<<<<< HEAD
         class="text-xs font-mono bg-yellow-200 text-yellow-700 rounded px-0.5 py-0.5"
       >&lt;script setup&gt;</code>)
+=======
+        class="
+          text-xs
+          font-mono
+          bg-yellow-200
+          text-yellow-700
+          rounded
+          px-0.5
+          py-0.5
+        "
+        >&lt;script setup&gt;</code
+      >)
+>>>>>>> e28dee5 (fix(lint): fix linting)
     </p>
 
     <p>
       {{ t('See') }}
       <code
+<<<<<<< HEAD
         class="text-xs font-mono bg-yellow-200 text-yellow-700 rounded px-0.5 py-0.5"
       >README.md</code>
+=======
+        class="
+          text-xs
+          font-mono
+          bg-yellow-200
+          text-yellow-700
+          rounded
+          px-0.5
+          py-0.5
+        "
+        >README.md</code
+      >
+>>>>>>> e28dee5 (fix(lint): fix linting)
       {{ t('more-info') }}
     </p>
     <p class="mb-10">
