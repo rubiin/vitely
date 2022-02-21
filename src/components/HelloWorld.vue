@@ -4,6 +4,8 @@
       {{ msg }}
     </h1>
 
+    <Counter />
+
     <p>
       {{ t('recomended-ide') }}
       <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
@@ -58,6 +60,6 @@ a {
 
 label {
   margin: 0 0.5em;
-  font-weight: bold;
+  @apply !font-bold;
 }
 </style>
