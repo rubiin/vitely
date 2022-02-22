@@ -10,6 +10,7 @@ import ViteVisualizer from 'rollup-plugin-visualizer';
 import strip from '@rollup/plugin-strip';
 import path from 'path';
 import { VitePWA } from 'vite-plugin-pwa';
+import viteCompression from 'vite-plugin-compression';
 
 export default defineConfig(({ mode }) => {
   const isDev = mode === 'dev';
@@ -74,6 +75,9 @@ export default defineConfig(({ mode }) => {
       google: {
         families: ['Poppins', 'Montserrat'],
       },
+    }),
+    viteCompression({
+      algorithm: 'brotliCompress',
     }),
 
     // https://github.com/intlify/vite-plugin-vue-i18n
