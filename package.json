@@ -28,8 +28,8 @@
     "test:unit": "vitest",
     "start": "serve dist -l 4000",
     "report": "vite build --mode report",
-    "stylelint": "stylelint --config stylelintrc.json 'src/**/*.{vue}'",
-    "stylelint:fix": "stylelint --config stylelintrc.json --fix 'src/**/*.{vue}'"
+    "stylelint": "stylelint --config stylelintrc.json 'src/**/*.vue'",
+    "stylelint:fix": "stylelint --config stylelintrc.json --fix 'src/**/*.vue'"
   },
   "dependencies": {
     "@vueuse/core": "^7.6.2",
@@ -86,8 +86,8 @@
     "serve": "^13.0.2",
     "storybook-builder-vite": "^0.1.17",
     "stylelint": "^14.5.3",
-    "stylelint-config-recommended": "^7.0.0",
-    "stylelint-config-standard": "^25.0.0",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint-scss": "^4.1.0",
     "typescript": "^4.5.5",
     "unocss": "^0.26.2",
     "unplugin-auto-import": "^0.6.1",

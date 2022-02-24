@@ -85,7 +85,13 @@ export default defineConfig(({ mode }) => {
       include: [path.resolve(__dirname, './locales/**')],
     }),
     VitePWA({
-      includeAssets: ['logotype.svg'],
+      registerType: 'autoUpdate',
+      includeAssets: [
+        'favicon.png',
+        'robots.txt',
+        'apple-touch-icon.png',
+        'icons/*.svg',
+      ],
       manifest: {
         name: 'Vitely',
         short_name: 'Vitely',
@@ -93,20 +99,15 @@ export default defineConfig(({ mode }) => {
         theme_color: '#ffffff',
         icons: [
           {
-            src: 'android-chrome-192x192.png',
+            src: '/android-chrome-192x192.png',
             sizes: '192x192',
             type: 'image/png',
-          },
-          {
-            src: 'android-chrome-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-          },
-          {
-            src: 'android-chrome-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
             purpose: 'any maskable',
+          },
+          {
+            src: '/android-chrome-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
           },
         ],
       },
