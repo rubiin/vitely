@@ -1,6 +1,10 @@
 <template>
   <div class="flex flex-col my-5">
-    <a href="#" class="btn counter" @click="counter.increment()">Click me</a>
+    <a
+      href="#"
+      class="btn counter"
+      @click="counter.increment()"
+    >Click me</a>
     <span class="counter !w-4/12">Clicked: {{ counter.count }} times</span>
   </div>
 </template>

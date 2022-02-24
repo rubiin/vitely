@@ -22,7 +22,6 @@
     "lint": "eslint -c .eslintrc.js --ext .js,.vue,.ts, src",
     "lint:fix": "eslint -c .eslintrc.js --fix --ext .js,.vue,.ts, src",
     "format": "prettier . --write",
-    "typecheck": "vue-tsc --noEmit",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "test:e2e": "cypress open",
