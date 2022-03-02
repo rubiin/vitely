@@ -4,8 +4,6 @@
       {{ msg }}
     </h1>
 
-    <Counter />
-
     <p>
       {{ t('recomended-ide') }}
       <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
@@ -33,15 +31,8 @@
       >
       {{ t('more-info') }}
     </p>
-    <p class="mb-10">
-      <a
-        href="https://vitejs.dev/guide/features.html"
-        target="_blank"
-        class="btn"
-      >
-        Vite Docs
-      </a>
-    </p>
+
+    <counter />
   </div>
 </template>
 
@@ -54,10 +45,6 @@ const { t } = useI18n();
 </script>
 
 <style scoped>
-a {
-  transition: all 5s ease-out;
-}
-
 label {
   margin: 0 0.5em;
   @apply !font-bold;

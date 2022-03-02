@@ -3,7 +3,7 @@
     <div class="h-60 mb-8">
       <transition
         enter-active-class="transition ease-out duration-1000 transform"
-        enter-from-class="-translate-x-200 opacity-0"
+        enter-from-class="-translate-x-100 opacity-0"
         enter-to-class="translate-x-0 opacity-100"
         leave-active-class="transition ease-in duration-1000 transform"
         leave-from-class="opacity-100"
@@ -46,6 +46,19 @@
             title="Github repo"
           >
             <i class="i-carbon-logo-github dark:i-carbon-logo-github" />
+          </a>
+        </li>
+        <li class="cursor-pointer text-2xl">
+          <a
+            href="https://vitejs.dev/guide/features.html"
+            rel="noreferrer"
+            target="_blank"
+            class="footer-link text-cyan-600"
+            title="Vite docs"
+          >
+            <i
+              class="i-carbon-information-filled dark:i-carbon-information-filled"
+            />
           </a>
         </li>
       </ul>

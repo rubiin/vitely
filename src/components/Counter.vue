@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mt-20">
     <a
       href="#"
       class="btn counter hover:(scale-110 transition duration-500)"
