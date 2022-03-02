@@ -1,11 +1,11 @@
 <template>
-  <div class="flex flex-col my-5">
+  <div>
     <a
       href="#"
-      class="btn counter"
+      class="btn counter hover:(scale-110 transition duration-500)"
       @click="counter.increment()"
-    >Click me</a>
-    <span class="counter !w-4/12">Clicked: {{ counter.count }} times</span>
+      >{{ counter.count === 0 ? 'Click me' : `${counter.count} times` }}</a
+    >
   </div>
 </template>
 
