@@ -16,6 +16,6 @@ const counter = useCounterStore();
 
 <style>
 .counter {
-  @apply w-2/12 m-auto my-2 py-2;
+  @apply sm:w-3/12 md:w-2/12 lg:w-2/12 m-auto my-2 py-2;
 }
 </style>

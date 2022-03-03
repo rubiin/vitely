@@ -16,7 +16,9 @@
     <HelloWorld :msg="t('hello') + ' 👋 ' + t('welcome')" />
 
     <footer class="text-center">
-      <ul class="flex justify-between w-1/3 mx-auto mb-8">
+      <ul
+        class="flex justify-between w-6/12 gap-3 md:w-6/12 lg:w-1/3 mx-auto mb-8"
+      >
         <li class="cursor-pointer text-2xl">
           <a
             href="#"
