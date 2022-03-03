@@ -13,11 +13,20 @@
       </transition>
     </div>
 
-    <HelloWorld :msg="t('hello') + ' 👋 ' + t('welcome')" />
+    <hello-world :msg="t('hello') + ' 👋 ' + t('welcome')" />
 
     <footer class="text-center">
       <ul
-        class="flex justify-between w-6/12 gap-3 md:w-6/12 lg:w-1/3 mx-auto mb-8"
+        class="
+          flex
+          justify-between
+          w-6/12
+          gap-3
+          md:w-6/12
+          lg:w-1/3
+          mx-auto
+          mb-8
+        "
       >
         <li class="cursor-pointer text-2xl">
           <a
@@ -59,7 +68,10 @@
             title="Vite docs"
           >
             <i
-              class="i-carbon-information-filled dark:i-carbon-information-filled"
+              class="
+                i-carbon-information-filled
+                dark:i-carbon-information-filled
+              "
             />
           </a>
         </li>
@@ -106,12 +118,9 @@ setTimeout(() => {
 a,
 .footer-link {
   transition: all 5s ease-out;
+  opacity: 0.8;
 }
 li {
   list-style: none;
-}
-
-.footer-link {
-  opacity: 0.8;
 }
 </style>
