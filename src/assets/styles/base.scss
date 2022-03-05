@@ -1,5 +1,6 @@
 body {
   font-family: 'Poppins', sans-serif !important;
+  @apply dark:bg-gray-800 dark:text-gray-200;
 }
 h1 {
   font-family: 'Montserrat', sans-serif !important;

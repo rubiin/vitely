@@ -47,6 +47,7 @@ const { t } = useI18n();
 <style scoped>
 label {
   margin: 0 0.5em;
+
   @apply !font-bold;
 }
 </style>

@@ -92,6 +92,7 @@ a,
 .footer-link {
   transition: all 5s ease-out;
 }
+
 li {
   list-style: none;
 }
