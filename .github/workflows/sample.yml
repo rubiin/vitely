@@ -20,6 +20,7 @@ jobs:
       - run: yarn build
       - run: npx lockfile-lint --path yarn.lock --allowed-hosts npm yarn --validate-https
       - run: yarn test:unit
+      - run: yarn stylelint:fix
         env:
           CI: true
 
