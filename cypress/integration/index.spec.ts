@@ -23,10 +23,6 @@ context('Basic', () => {
         url: 'https://marketplace.visualstudio.com/items?itemName=octref.vetur',
       },
       {
-        name: 'Vite Docs',
-        url: 'https://vitejs.dev/guide/features.html',
-      },
-      {
         name: 'Rubiin',
         url: 'https://github.com/rubiin',
       },
