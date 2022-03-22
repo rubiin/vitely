@@ -63,7 +63,7 @@
     "@unocss/transformer-variant-group": "^0.28.0",
     "@vitejs/plugin-vue": "^2.2.4",
     "autoprefixer": "^10.4.2",
-    "cssnano": "^5.1.4",
+    "cssnano": "^5.1.5",
     "cssnano-preset-default": "^5.2.3",
     "cypress": "^9.5.1",
     "cz-conventional-changelog": "^3.3.0",
