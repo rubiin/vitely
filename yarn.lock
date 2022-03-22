@@ -14562,10 +14562,12 @@ vite-plugin-compression@^0.5.1:
     debug "^4.3.3"
     fs-extra "^10.0.0"
 
-vite-plugin-fonts@^0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/vite-plugin-fonts/-/vite-plugin-fonts-0.2.2.tgz#48cda78f5ad36907f3de497fa418ffd2b8f2ca83"
-  integrity sha512-fhzhsrTiuzlDjSO6g5sV5EVIIvbb8lmsaIY6eUTBM4lcF55x40UBpHrcyvNwIhQG211g0lu83XC7oZlkmvdkMA==
+vite-plugin-fonts@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/vite-plugin-fonts/-/vite-plugin-fonts-0.3.0.tgz#c27a35817105ad7ba458d4771545fa1b42170d4a"
+  integrity sha512-ziKf3859WraLHKO/32hzyH8GSzmzVPyIPoxU3TXAkTRMzarjVuTVABIwJXTvV99Lzhwx2GvQzxKGmPDazHeDqQ==
+  dependencies:
+    fast-glob "^3.2.11"
 
 vite-plugin-mdx@^3.5.6:
   version "3.5.10"
