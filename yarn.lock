@@ -3251,13 +3251,6 @@
     "@unocss/core" "0.28.0"
     local-pkg "^0.4.1"
 
-"@unocss/preset-mini@0.28.0":
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/@unocss/preset-mini/-/preset-mini-0.28.0.tgz#3182dabcbf90b032eaa1882c3e9c2bef1eefb897"
-  integrity sha512-dBBPERIXiKEozSeHv0YIWJae4lbQv5RpUZSRCj0hdutICxS/kVqVLNTvPVodaiiZpnSv4GfrPyELIBZY5WJVtA==
-  dependencies:
-    "@unocss/core" "0.28.0"
-
 "@unocss/preset-mini@0.29.5":
   version "0.29.5"
   resolved "https://registry.yarnpkg.com/@unocss/preset-mini/-/preset-mini-0.29.5.tgz#57354e48718a44f21ae1f73f6cfd4b0513f6a4c8"
@@ -3279,7 +3272,7 @@
   dependencies:
     "@unocss/core" "0.28.0"
 
-"@unocss/preset-uno@0.29.5":
+"@unocss/preset-uno@0.29.5", "@unocss/preset-uno@^0.29.5":
   version "0.29.5"
   resolved "https://registry.yarnpkg.com/@unocss/preset-uno/-/preset-uno-0.29.5.tgz#909d6583581c644ba2b64a224adb7c2378f0a8a6"
   integrity sha512-ZPIAjWONxWWf0Aq3I/L3PkURiYBXgQoJ7Tf9/W6dPotGpMFI7p10K/MMh+2Ha5Q7I52uWON32XkTJr6KkI221g==
@@ -3288,15 +3281,6 @@
     "@unocss/preset-mini" "0.29.5"
     "@unocss/preset-wind" "0.29.5"
 
-"@unocss/preset-uno@^0.28.0":
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/@unocss/preset-uno/-/preset-uno-0.28.0.tgz#f5f289c04ab3bf686c40d0af9b77d694c81dc6ed"
-  integrity sha512-q43nEch7rM7Vkuu4G9T4rkzrri8rJELYPlvPEzSzMBsZHa8+ql71pDbFqBdjD1djJppHPilzyEwUVkCQuAuRJg==
-  dependencies:
-    "@unocss/core" "0.28.0"
-    "@unocss/preset-mini" "0.28.0"
-    "@unocss/preset-wind" "0.28.0"
-
 "@unocss/preset-web-fonts@0.29.5":
   version "0.29.5"
   resolved "https://registry.yarnpkg.com/@unocss/preset-web-fonts/-/preset-web-fonts-0.29.5.tgz#0449f332577c9721c860e4f44555a90b6c018c83"
@@ -3304,14 +3288,6 @@
   dependencies:
     "@unocss/core" "0.29.5"
     axios "^0.26.1"
-
-"@unocss/preset-wind@0.28.0":
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/@unocss/preset-wind/-/preset-wind-0.28.0.tgz#f984635670ce3a8d8dd4235dc326e27f97fd6db0"
-  integrity sha512-zFgj4Prm4MmjnoDSLL8mT4vl0B6SVi9uiXnO/bTu4kO1aRQYKjCMG5Sx8WETkTQerwt1dfmapfzAaWERpMG+qA==
-  dependencies:
-    "@unocss/core" "0.28.0"
-    "@unocss/preset-mini" "0.28.0"
 
 "@unocss/preset-wind@0.29.5":
   version "0.29.5"
