@@ -13198,10 +13198,10 @@ store2@^2.12.0:
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.13.1.tgz#fae7b5bb9d35fc53dc61cd262df3abb2f6e59022"
   integrity sha512-iJtHSGmNgAUx0b/MCS6ASGxb//hGrHHRgzvN+K5bvkBTN7A9RTpPSf1WSp+nPGvWCJ1jRnvY7MKnuqfoi3OEqg==
 
-storybook-builder-vite@^0.1.18:
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/storybook-builder-vite/-/storybook-builder-vite-0.1.18.tgz#39ae4e999bbb3c24405e53ca8444173e6cd766ef"
-  integrity sha512-XKyDgvgm6M5MBUOndXQH+0XvDzdt5JbsD0QorhCE0ExDGSOxMRdlQxCc24yYy0wYYbPL/7PQ5yEorg2TTuP8eQ==
+storybook-builder-vite@^0.1.21:
+  version "0.1.21"
+  resolved "https://registry.yarnpkg.com/storybook-builder-vite/-/storybook-builder-vite-0.1.21.tgz#1fc3f20aef92f914725b0408e0033b3b2cd20c1f"
+  integrity sha512-yVlBUtb+YhBgHdUXacOJ6hmfRkN/+VoH7uGkWOnksl3NBGUeAw3tvhQ5FzOGjX9510VtiJCCvR0iQwKRmpoYlA==
   dependencies:
     "@joshwooding/vite-plugin-react-docgen-typescript" "0.0.2"
     "@mdx-js/mdx" "^1.6.22"
