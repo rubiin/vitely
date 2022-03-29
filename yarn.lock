@@ -3472,11 +3472,6 @@
   resolved "https://registry.yarnpkg.com/@unocss/core/-/core-0.30.4.tgz#821e7604ab91e67fd79ff9a3bb8eafeed0040bef"
   integrity sha512-U44gmdVwpSmOX5LX4hDJ4+2LGKGa3bN8X5lb9CJZNCqA4KNBaYe+k93muCxl2sX28xZcLAaNvkftCr9A6YVoZw==
 
-"@unocss/core@0.30.4":
-  version "0.30.4"
-  resolved "https://registry.yarnpkg.com/@unocss/core/-/core-0.30.4.tgz#821e7604ab91e67fd79ff9a3bb8eafeed0040bef"
-  integrity sha512-U44gmdVwpSmOX5LX4hDJ4+2LGKGa3bN8X5lb9CJZNCqA4KNBaYe+k93muCxl2sX28xZcLAaNvkftCr9A6YVoZw==
-
 "@unocss/inspector@0.29.5":
   version "0.29.5"
   resolved "https://registry.yarnpkg.com/@unocss/inspector/-/inspector-0.29.5.tgz#a32e1c313cdeef0fd77e37693a16dfc7a23af719"
@@ -14345,10 +14340,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^4.4.3, typescript@^4.6.2:
-  version "4.6.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.6.2.tgz#fe12d2727b708f4eef40f51598b3398baa9611d4"
-  integrity sha512-HM/hFigTBHZhLXshn9sN37H085+hQGeJHJ/X7LpBWLID/fbc2acUMfU+lGD98X81sKP+pFa9f0DZmCwB9GnbAg==
+typescript@^4.4.3, typescript@^4.6.3:
+  version "4.6.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.6.3.tgz#eefeafa6afdd31d725584c67a0eaba80f6fc6c6c"
+  integrity sha512-yNIatDa5iaofVozS/uQJEl3JRWLKKGJKh6Yaiv0GLGSuhpFJe7P3SbHZ8/yjAHRQwKRoA6YZqlfjXWmVzoVSMw==
 
 uglify-js@^3.1.4:
   version "3.15.3"
