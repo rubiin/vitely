@@ -85,7 +85,7 @@
     "rtlcss": "^3.5.0",
     "sass": "^1.49.11",
     "serve": "^13.0.2",
-    "storybook-builder-vite": "^0.1.22",
+    "storybook-builder-vite": "^0.1.23",
     "stylelint": "^14.6.1",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-recommended-vue": "^1.4.0",
