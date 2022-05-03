@@ -55,7 +55,7 @@
     "@types/jest": "^27.4.1",
     "@types/node": "^17.0.23",
     "@typescript-eslint/eslint-plugin": "^5.17.0",
-    "@typescript-eslint/parser": "^5.17.0",
+    "@typescript-eslint/parser": "^5.22.0",
     "@unocss/preset-icons": "^0.31.0",
     "@unocss/preset-typography": "^0.30.10",
     "@unocss/preset-uno": "^0.31.0",
