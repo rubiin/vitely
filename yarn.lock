@@ -3518,11 +3518,10 @@
     "@typescript-eslint/types" "5.22.0"
     eslint-visitor-keys "^3.0.0"
 
-"@unocss/cli@0.30.11":
-  version "0.30.11"
-  resolved "https://registry.yarnpkg.com/@unocss/cli/-/cli-0.30.11.tgz#50c20f7cce687e2b2f4cf8217acccb472a1bcef5"
-  integrity sha512-WL7Hdavwph/SIOOBqhF3PZjBkb9EuecX2iAVYT9FRC/ymAwxe6F0ygYaB0wU2iGNWsMQOZMWCEbryBW06Pk54A==
-
+"@unocss/cli@0.32.9":
+  version "0.32.9"
+  resolved "https://registry.yarnpkg.com/@unocss/cli/-/cli-0.32.9.tgz#a062f796d39d25b6bbdd576637a04eb83d83529f"
+  integrity sha512-lHqq7wCI7Q7yWbDyGB4W4BMsr9m4U+HIu9/18Vn4N7eqr0wog5tUTaea2c0ErJYH8LVXvqMmvbib1Kq/KrbRaA==
   dependencies:
     "@unocss/config" "0.32.9"
     "@unocss/core" "0.32.9"
@@ -11478,10 +11477,10 @@ pinia-plugin-persistedstate@^1.5.1:
   resolved "https://registry.yarnpkg.com/pinia-plugin-persistedstate/-/pinia-plugin-persistedstate-1.5.1.tgz#9ea81e5a245e87941c750fdb5eb303bab399427b"
   integrity sha512-X0jKWvA3kbpYe8RuIyLaZDEAFvsv3+QmBkMzInBHl0O57+eVJjswXHnIWeFAeFjktrE0cJbGHw2sBMgkcleySQ==
 
-pinia@^2.0.13:
-  version "2.0.13"
-  resolved "https://registry.yarnpkg.com/pinia/-/pinia-2.0.13.tgz#6656fc290dae120a9f0cb2f5c520df400d41b8c5"
-  integrity sha512-B7rSqm1xNpwcPMnqns8/gVBfbbi7lWTByzS6aPZ4JOXSJD4Y531rZHDCoYWBwLyHY/8hWnXljgiXp6rRyrofcw==
+pinia@^2.0.14:
+  version "2.0.14"
+  resolved "https://registry.yarnpkg.com/pinia/-/pinia-2.0.14.tgz#0837898c20291ebac982bbfca95c8d3c6099925f"
+  integrity sha512-0nPuZR4TetT/WcLN+feMSjWJku3SQU7dBbXC6uw+R6FLQJCsg+/0pzXyD82T1FmAYe0lsx+jnEDQ1BLgkRKlxA==
   dependencies:
     "@vue/devtools-api" "^6.1.4"
     vue-demi "*"
