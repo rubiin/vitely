@@ -3518,11 +3518,10 @@
     "@typescript-eslint/types" "5.22.0"
     eslint-visitor-keys "^3.0.0"
 
-"@unocss/cli@0.30.11":
-  version "0.30.11"
-  resolved "https://registry.yarnpkg.com/@unocss/cli/-/cli-0.30.11.tgz#50c20f7cce687e2b2f4cf8217acccb472a1bcef5"
-  integrity sha512-WL7Hdavwph/SIOOBqhF3PZjBkb9EuecX2iAVYT9FRC/ymAwxe6F0ygYaB0wU2iGNWsMQOZMWCEbryBW06Pk54A==
-
+"@unocss/cli@0.32.9":
+  version "0.32.9"
+  resolved "https://registry.yarnpkg.com/@unocss/cli/-/cli-0.32.9.tgz#a062f796d39d25b6bbdd576637a04eb83d83529f"
+  integrity sha512-lHqq7wCI7Q7yWbDyGB4W4BMsr9m4U+HIu9/18Vn4N7eqr0wog5tUTaea2c0ErJYH8LVXvqMmvbib1Kq/KrbRaA==
   dependencies:
     "@unocss/config" "0.32.9"
     "@unocss/core" "0.32.9"
@@ -9896,10 +9895,10 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.2.4.tgz#eca284f75d2965079309dc0ad9255abb2ebc1632"
   integrity sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==
 
-lint-staged@^12.3.7:
-  version "12.3.7"
-  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-12.3.7.tgz#ad0e2014302f704f9cf2c0ebdb97ac63d0f17be0"
-  integrity sha512-/S4D726e2GIsDVWIk1XGvheCaDm1SJRQp8efamZFWJxQMVEbOwSysp7xb49Oo73KYCdy97mIWinhlxcoNqIfIQ==
+lint-staged@^12.4.1:
+  version "12.4.1"
+  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-12.4.1.tgz#63fa27bfc8a33515f6902f63f6670864f1fb233c"
+  integrity sha512-PTXgzpflrQ+pODQTG116QNB+Q6uUTDg5B5HqGvNhoQSGt8Qy+MA/6zSnR8n38+sxP5TapzeQGTvoKni0KRS8Vg==
   dependencies:
     cli-truncate "^3.1.0"
     colorette "^2.0.16"
