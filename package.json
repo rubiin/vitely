@@ -47,7 +47,7 @@
     "@intlify/vite-plugin-vue-i18n": "^3.4.0",
     "@rollup/plugin-strip": "^2.1.0",
     "@storybook/addon-actions": "^6.5.4",
-    "@storybook/addon-essentials": "^6.5.4",
+    "@storybook/addon-essentials": "^6.5.9",
     "@storybook/addon-links": "^6.5.4",
     "@storybook/vue3": "^6.5.4",
     "@testing-library/jest-dom": "^5.16.4",
