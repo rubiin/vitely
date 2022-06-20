@@ -98,7 +98,7 @@
     "vite-plugin-fonts": "^0.4.0",
     "vite-plugin-pwa": "^0.12.0",
     "vite-svg-loader": "^3.3.0",
-    "vitest": "^0.12.9",
+    "vitest": "^0.15.1",
     "vue-tsc": "^0.34.16"
   },
   "engines": {
