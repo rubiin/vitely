@@ -36,7 +36,7 @@
     "@vueuse/head": "^0.7.6",
     "axios": "^0.27.2",
     "pinia": "^2.0.14",
-    "pinia-plugin-persistedstate": "^1.6.0",
+    "pinia-plugin-persistedstate": "^1.6.1",
     "vue": "^3.2.36",
     "vue-i18n": "^9.2.0-beta.35",
     "vue-router": "^4.0.15"
