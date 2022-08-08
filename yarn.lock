@@ -1275,12 +1275,12 @@
   dependencies:
     "@iconify/types" "*"
 
-"@iconify-json/carbon@^1.1.5":
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/@iconify-json/carbon/-/carbon-1.1.5.tgz#7eb4848f2372750426938497ddce2e457635f278"
-  integrity sha512-ENl8CIEo+7JcRzpJ/58i+dDc3fkNOO7gyNGg4S4JN5cAiVpvltYTVO86Oei7rpl8bKypJ0vk3B0BbzzTw7DclA==
+"@iconify-json/carbon@^1.1.7":
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/@iconify-json/carbon/-/carbon-1.1.7.tgz#a771061eac265d24c892782efd9b27b7aed45721"
+  integrity sha512-QULSpNWKaX4auIbjITDynfALdJYvOOy/xZb+aLOqCgvpBcmbz5tbqvow4r25FWtVsi4FHVpNQ8vyJZXsD1Hlxg==
   dependencies:
-    "@iconify/types" "^1.1.0"
+    "@iconify/types" "*"
 
 "@iconify/types@*", "@iconify/types@^1.1.0":
   version "1.1.0"
