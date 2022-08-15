@@ -54,7 +54,7 @@
     "@testing-library/vue": "^6.6.1",
     "@types/jest": "^28.1.6",
     "@types/node": "^18.7.2",
-    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/eslint-plugin": "^5.33.1",
     "@typescript-eslint/parser": "^5.33.0",
     "@unocss/preset-icons": "^0.45.6",
     "@unocss/preset-typography": "^0.45.6",
