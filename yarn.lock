@@ -3065,11 +3065,6 @@
     "@unocss/core" "0.45.7"
     unconfig "^0.3.5"
 
-"@unocss/core@0.45.12":
-  version "0.45.12"
-  resolved "https://registry.yarnpkg.com/@unocss/core/-/core-0.45.12.tgz#6491e0a28abd800d9e9c0c7a6a6dfa48498e247f"
-  integrity sha512-21ri/IF/r82lYJTSZ8kBwesSPysaMopMbPy6AtHgCQIHQPsdx6lOzg9Wq5rh+5IjXywXSmuRMuHiYSPjI0yxdw==
-
 "@unocss/core@0.45.13":
   version "0.45.13"
   resolved "https://registry.yarnpkg.com/@unocss/core/-/core-0.45.13.tgz#fb41748276f04767b34abfc43e7c511185f47025"
@@ -3079,6 +3074,11 @@
   version "0.45.15"
   resolved "https://registry.yarnpkg.com/@unocss/core/-/core-0.45.15.tgz#70796f691e703a2345976fcae440d7e47ab16bb8"
   integrity sha512-NM/l/+6sg4+qQqnzbpaGDEswfkH7c1oyRA+L+gYIFPAfehQMEdKkXXJozBdFy78kLjfPVLL6iMnDhcojdZvOSg==
+
+"@unocss/core@0.45.21":
+  version "0.45.21"
+  resolved "https://registry.yarnpkg.com/@unocss/core/-/core-0.45.21.tgz#ae9be954459d8df9c7eac3b307918136c5f8253a"
+  integrity sha512-9yvgEYHFy6NFQwiQ0fEMg3QUGvcHfXbSmZszupa8ojpbR7UM26Ng+RY/Tyx1zh9HBaS7N+73z7u6gcygc7mUJA==
 
 "@unocss/core@0.45.7":
   version "0.45.7"
@@ -3196,12 +3196,12 @@
     "@unocss/core" "0.45.7"
     css-tree "^2.1.0"
 
-"@unocss/transformer-directives@^0.45.12":
-  version "0.45.12"
-  resolved "https://registry.yarnpkg.com/@unocss/transformer-directives/-/transformer-directives-0.45.12.tgz#4c15944c0bf2bde42be3ae8ab3611c6197e1756b"
-  integrity sha512-VRUNAgWtBtrTTJPiUVoSbuFgJnr7ema00nRtOG9L1+YF27hBUQvIn/u5rkADY+R+j4+iUi2CUD/Recywk6WR8A==
+"@unocss/transformer-directives@^0.45.21":
+  version "0.45.21"
+  resolved "https://registry.yarnpkg.com/@unocss/transformer-directives/-/transformer-directives-0.45.21.tgz#effe3353c4675a44d12cb853cb7ac65789561131"
+  integrity sha512-bF7UThxj81+MM5ZZ0LLaEFhiexSbftF+Ld+AxHhe0MtaBo1oZp8z9AQrCCfQC1rJY5zAcbBGjTJO5BSVsvIDlQ==
   dependencies:
-    "@unocss/core" "0.45.12"
+    "@unocss/core" "0.45.21"
     css-tree "^2.2.1"
 
 "@unocss/transformer-variant-group@0.45.7":
