@@ -32,7 +32,7 @@
     "stylelint:fix": "stylelint --config stylelintrc.json --fix 'src/**/*.vue'"
   },
   "dependencies": {
-    "@vueuse/core": "^9.1.0",
+    "@vueuse/core": "^9.2.0",
     "@vueuse/head": "^0.7.9",
     "axios": "^0.27.2",
     "pinia": "^2.0.18",
