@@ -3194,15 +3194,15 @@
   resolved "https://registry.yarnpkg.com/@unocss/core/-/core-0.45.13.tgz#fb41748276f04767b34abfc43e7c511185f47025"
   integrity sha512-EesxqFM6lPA6Ot5X4cyRcjJQsgpztrNFpxpu4HBIzbZvXLcoeG97bcLTASGSHPGWeL4baq0ur/47lM42dtjiMQ==
 
-"@unocss/core@0.45.15":
-  version "0.45.15"
-  resolved "https://registry.yarnpkg.com/@unocss/core/-/core-0.45.15.tgz#70796f691e703a2345976fcae440d7e47ab16bb8"
-  integrity sha512-NM/l/+6sg4+qQqnzbpaGDEswfkH7c1oyRA+L+gYIFPAfehQMEdKkXXJozBdFy78kLjfPVLL6iMnDhcojdZvOSg==
-
 "@unocss/core@0.45.21":
   version "0.45.21"
   resolved "https://registry.yarnpkg.com/@unocss/core/-/core-0.45.21.tgz#ae9be954459d8df9c7eac3b307918136c5f8253a"
   integrity sha512-9yvgEYHFy6NFQwiQ0fEMg3QUGvcHfXbSmZszupa8ojpbR7UM26Ng+RY/Tyx1zh9HBaS7N+73z7u6gcygc7mUJA==
+
+"@unocss/core@0.45.24":
+  version "0.45.24"
+  resolved "https://registry.yarnpkg.com/@unocss/core/-/core-0.45.24.tgz#ae7e06c4e24e41dfd2ada3d63307218a9f72c621"
+  integrity sha512-Ll5RdG83b39PUfHI6ft2hsJ7EvQft/2iEKA/2XDgk5eRC9f3JBJ2U5X6on6mIrdepD5d3hQxD/N0NNWRq9oozg==
 
 "@unocss/core@0.45.7":
   version "0.45.7"
@@ -3335,12 +3335,12 @@
   dependencies:
     "@unocss/core" "0.45.7"
 
-"@unocss/transformer-variant-group@^0.45.15":
-  version "0.45.15"
-  resolved "https://registry.yarnpkg.com/@unocss/transformer-variant-group/-/transformer-variant-group-0.45.15.tgz#706674788bae8c5a86da35dcc21607a6aa6b979a"
-  integrity sha512-noHC7e0sfNdh0mcIC6AoozPboXcE2ccu0M2JxH8EKZrUo6R7jzah3qtRsXzhyDRKbJB19nLvxlCEW9CYnwdOhQ==
+"@unocss/transformer-variant-group@^0.45.24":
+  version "0.45.24"
+  resolved "https://registry.yarnpkg.com/@unocss/transformer-variant-group/-/transformer-variant-group-0.45.24.tgz#a39ba9b8415a431a86e8bdfa52c000cbd24b530d"
+  integrity sha512-LPhAqwjYAo9FytMDrvweGcnJjmxQLVo14IT6DkODAWNU5WxnPefMfwhXcLUFv/rcEsTV1xAyfsaPVB+ZvvO8GA==
   dependencies:
-    "@unocss/core" "0.45.15"
+    "@unocss/core" "0.45.24"
 
 "@unocss/vite@0.45.7":
   version "0.45.7"
