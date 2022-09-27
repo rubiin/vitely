@@ -1309,10 +1309,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@iconify-json/bx@^1.1.3":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@iconify-json/bx/-/bx-1.1.3.tgz#109399dade681c7c95e7ca1854d0c5b0f999cd62"
-  integrity sha512-Y7iKbjsf52fGd0IIjtUz8Hoz4S5PyXxRJRqskQFnDPSOUD0zRIbDom3UfTv5HGv8I0zEvJ0jpEVQlt+efkve/g==
+"@iconify-json/bx@^1.1.4":
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@iconify-json/bx/-/bx-1.1.4.tgz#6d25638d1424899c124945a9b7d705a65abdf1d0"
+  integrity sha512-Wpns1gsmBoMu3fT5i2KfvP8LaU6KR8uwbDrhzEYmi3ehdiZx2UcqtUmb2OZsejyL12y3OGRCSn9HnXf0bWmstQ==
   dependencies:
     "@iconify/types" "*"
 
