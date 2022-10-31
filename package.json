@@ -48,7 +48,7 @@
     "@rollup/plugin-strip": "^3.0.0",
     "@storybook/addon-actions": "^6.5.13",
     "@storybook/addon-essentials": "^6.5.12",
-    "@storybook/addon-links": "^6.5.12",
+    "@storybook/addon-links": "^6.5.13",
     "@storybook/vue3": "^6.5.12",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/vue": "^6.6.1",
