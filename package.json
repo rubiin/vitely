@@ -67,7 +67,7 @@
     "cssnano-preset-default": "^5.2.12",
     "cypress": "^10.10.0",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.24.0",
+    "eslint": "^8.27.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-node": "^11.1.0",
