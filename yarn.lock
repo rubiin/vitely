@@ -3372,13 +3372,22 @@
   dependencies:
     "@unocss/core" "0.45.30"
 
-"@unocss/preset-icons@0.45.30", "@unocss/preset-icons@^0.45.29":
+"@unocss/preset-icons@0.45.30":
   version "0.45.30"
   resolved "https://registry.yarnpkg.com/@unocss/preset-icons/-/preset-icons-0.45.30.tgz#1ae71cc141a61319e6a3ee5e6b7c34da524bbb92"
   integrity sha512-yPyel0k/gchuJyuVPzELuH4UZDpZ6VG34fIdH3QDpjVnIXZCeubUX2kdNpk+2Ojjy10DcU4TAnDrXqVYz3s+MA==
   dependencies:
     "@iconify/utils" "^2.0.1"
     "@unocss/core" "0.45.30"
+    ohmyfetch "^0.4.20"
+
+"@unocss/preset-icons@^0.46.5":
+  version "0.46.5"
+  resolved "https://registry.yarnpkg.com/@unocss/preset-icons/-/preset-icons-0.46.5.tgz#415002151fe9456de521b4ed47fac3600624e30d"
+  integrity sha512-g1gMi++j233nc/5KcUti5+X+fQ9K36MzROx37pJCFz+jD5i7Y21hXOC/brP7k4tWo1IEFR8rsLgtvVEXOhu8Sw==
+  dependencies:
+    "@iconify/utils" "^2.0.1"
+    "@unocss/core" "0.46.5"
     ohmyfetch "^0.4.20"
 
 "@unocss/preset-mini@0.45.30":
