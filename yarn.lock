@@ -3427,6 +3427,13 @@
   dependencies:
     "@unocss/core" "0.45.30"
 
+"@unocss/preset-mini@0.46.5":
+  version "0.46.5"
+  resolved "https://registry.yarnpkg.com/@unocss/preset-mini/-/preset-mini-0.46.5.tgz#01c71bc615682978613576e5cb6a50f842dd3020"
+  integrity sha512-pSiCUeNoLs9F5ux7BzsTKqQhTABvwtggv45Kza2wDIStPESLYHInPUHF57e753IhKdZSpX08gSRiYF4mXVcFWg==
+  dependencies:
+    "@unocss/core" "0.46.5"
+
 "@unocss/preset-tagify@0.45.30":
   version "0.45.30"
   resolved "https://registry.yarnpkg.com/@unocss/preset-tagify/-/preset-tagify-0.45.30.tgz#aa7a89e061e10ba8b47221a9f9c32c88a4aa15c0"
@@ -3448,7 +3455,7 @@
   dependencies:
     "@unocss/core" "0.46.3"
 
-"@unocss/preset-uno@0.45.30", "@unocss/preset-uno@^0.45.6":
+"@unocss/preset-uno@0.45.30":
   version "0.45.30"
   resolved "https://registry.yarnpkg.com/@unocss/preset-uno/-/preset-uno-0.45.30.tgz#33d947c9d3747cc2601908698bf861641face736"
   integrity sha512-dQ//s9VJo7Oj3gy6kkbfXUYVOSr4tAGmhcPzKNO6KyBNH75tMUf20N41bVReuLUpHp3W7j60XxV16kip6pmlZQ==
@@ -3456,6 +3463,15 @@
     "@unocss/core" "0.45.30"
     "@unocss/preset-mini" "0.45.30"
     "@unocss/preset-wind" "0.45.30"
+
+"@unocss/preset-uno@^0.46.5":
+  version "0.46.5"
+  resolved "https://registry.yarnpkg.com/@unocss/preset-uno/-/preset-uno-0.46.5.tgz#4c772d09b04d2ed6e8c1fb9a5b0cea9d235e67e9"
+  integrity sha512-O4f/cSdNAnK3MVXLgzihnOLrp12h3787U9bPZ1WS7Ow52D+kzBfRLVEWy4RWCGDN+ko/0q7Q7nqZOkrtcCELJQ==
+  dependencies:
+    "@unocss/core" "0.46.5"
+    "@unocss/preset-mini" "0.46.5"
+    "@unocss/preset-wind" "0.46.5"
 
 "@unocss/preset-web-fonts@0.45.30":
   version "0.45.30"
@@ -3472,6 +3488,14 @@
   dependencies:
     "@unocss/core" "0.45.30"
     "@unocss/preset-mini" "0.45.30"
+
+"@unocss/preset-wind@0.46.5":
+  version "0.46.5"
+  resolved "https://registry.yarnpkg.com/@unocss/preset-wind/-/preset-wind-0.46.5.tgz#41e310bbb2d269f719bbf69c18a9a46b382d9b6c"
+  integrity sha512-v1n918arr7qg/AYjkvVCJDqWT7bd8UhdT7tBCcJcFOuPvJdToBoy3LcNxQXQpS7gcVGG7YiKE5rT4JwsV7U5XA==
+  dependencies:
+    "@unocss/core" "0.46.5"
+    "@unocss/preset-mini" "0.46.5"
 
 "@unocss/reset@0.45.30":
   version "0.45.30"
