@@ -61,7 +61,7 @@
     "@unocss/preset-uno": "^0.45.6",
     "@unocss/transformer-directives": "^0.46.5",
     "@unocss/transformer-variant-group": "^0.46.0",
-    "@vitejs/plugin-vue": "^3.1.2",
+    "@vitejs/plugin-vue": "^3.2.0",
     "autoprefixer": "^10.4.13",
     "cssnano": "^5.1.14",
     "cssnano-preset-default": "^5.2.12",
