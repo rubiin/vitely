@@ -99,7 +99,7 @@
     "vite-plugin-pwa": "^0.13.3",
     "vite-svg-loader": "^3.6.0",
     "vitest": "^0.22.1",
-    "vue-tsc": "^0.40.13"
+    "vue-tsc": "^1.0.13"
   },
   "engines": {
     "node": ">= 14",
