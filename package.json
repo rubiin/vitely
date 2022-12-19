@@ -44,7 +44,7 @@
   "devDependencies": {
     "@iconify-json/bx": "^1.1.5",
     "@iconify-json/carbon": "^1.1.11",
-    "@intlify/vite-plugin-vue-i18n": "^6.0.3",
+    "@intlify/vite-plugin-vue-i18n": "^7.0.0",
     "@rollup/plugin-strip": "^3.0.2",
     "@storybook/addon-actions": "^6.5.14",
     "@storybook/addon-essentials": "^6.5.14",
