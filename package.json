@@ -51,7 +51,7 @@
     "@storybook/addon-links": "^6.5.14",
     "@storybook/vue3": "^6.5.14",
     "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/vue": "^6.6.1",
+    "@testing-library/vue": "^7.0.0",
     "@types/jest": "^29.2.4",
     "@types/node": "^18.11.17",
     "@typescript-eslint/eslint-plugin": "^5.46.1",
