@@ -46,7 +46,7 @@
     "@iconify-json/carbon": "^1.1.11",
     "@intlify/vite-plugin-vue-i18n": "^7.0.0",
     "@rollup/plugin-strip": "^3.0.2",
-    "@storybook/addon-actions": "^6.5.14",
+    "@storybook/addon-actions": "^7.0.13",
     "@storybook/addon-essentials": "^6.5.14",
     "@storybook/addon-links": "^6.5.14",
     "@storybook/vue3": "^7.0.12",
