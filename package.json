@@ -75,7 +75,7 @@
     "eslint-plugin-storybook": "^0.6.8",
     "eslint-plugin-vue": "^9.8.0",
     "husky": "^8.0.2",
-    "jsdom": "^21.0.0",
+    "jsdom": "^22.1.0",
     "lint-staged": "^13.1.0",
     "postcss": "^8.4.20",
     "postcss-combine-duplicated-selectors": "^10.0.3",
