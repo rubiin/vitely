@@ -52,7 +52,7 @@
     "@storybook/vue3": "^7.0.12",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/vue": "^6.6.1",
-    "@types/jest": "^29.2.4",
+    "@types/jest": "^29.5.2",
     "@types/node": "^18.11.17",
     "@typescript-eslint/eslint-plugin": "^5.46.1",
     "@typescript-eslint/parser": "^5.46.1",
