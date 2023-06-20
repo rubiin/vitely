@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "@vueuse/core": "^9.7.0",
-    "@vueuse/head": "^1.0.22",
+    "@vueuse/head": "^1.1.26",
     "axios": "^1.2.1",
     "pinia": "^2.0.28",
     "pinia-plugin-persistedstate": "^3.0.1",
