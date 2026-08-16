@@ -3,10 +3,9 @@ import vue from '@vitejs/plugin-vue';
 import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
 import Unocss from 'unocss/vite';
-import VueI18n from '@intlify/vite-plugin-vue-i18n';
-import ViteFonts from 'vite-plugin-fonts';
+import VueI18n from '@intlify/unplugin-vue-i18n/vite';
+import Fonts from 'unplugin-fonts/vite';
 import svgLoader from 'vite-svg-loader';
-import ViteVisualizer from 'rollup-plugin-visualizer';
 import strip from '@rollup/plugin-strip';
 import path from 'path';
 import { VitePWA } from 'vite-plugin-pwa';
@@ -14,7 +13,6 @@ import viteCompression from 'vite-plugin-compression';
 
 export default defineConfig(({ mode }) => {
   const isDev = mode === 'dev';
-  const isReport = mode === 'report';
 
   // loads environment variables from .env file and exposes them to process.env
   process.env = { ...process.env, ...loadEnv(mode, './env') };
@@ -26,16 +24,7 @@ export default defineConfig(({ mode }) => {
      * dependency pre-bundling
      */
     optimizeDeps = {
-      include: [
-        'vue',
-        'vue-router',
-        'pinia',
-        'vue-i18n',
-        '@vue/shared',
-        '@vue/runtime-core',
-        '@vueuse/core',
-        '@vueuse/head',
-      ],
+      include: ['vue', 'vue-router', 'pinia', 'vue-i18n', '@vueuse/core'],
       exclude: ['vue-demi'],
     };
   }
@@ -59,30 +48,42 @@ export default defineConfig(({ mode }) => {
         'vue-router',
         'vue-i18n',
         '@vueuse/core',
-        '@vueuse/head',
       ],
     }),
     Components({
       extensions: ['vue'],
       directoryAsNamespace: true,
       globalNamespaces: ['global'],
-      importPathTransform: path =>
-        path.endsWith('.svg') ? `${path}?component` : undefined,
+      importPathTransform: p =>
+        p.endsWith('.svg') ? `${p}?component` : undefined,
       include: [/\.vue$/, /\.md$/],
     }),
 
-    ViteFonts({
+    Fonts({
       google: {
-        families: ['Poppins', 'Montserrat'],
+        families: [
+          {
+            name: 'Fraunces',
+            styles: 'ital,wght@0,300;0,400;0,500;0,600;1,400',
+          },
+          {
+            name: 'Inter',
+            styles: 'wght@300;400;500;600',
+          },
+          {
+            name: 'JetBrains Mono',
+            styles: 'wght@400;500',
+          },
+        ],
       },
     }),
     viteCompression({
       algorithm: 'brotliCompress',
     }),
 
-    // https://github.com/intlify/vite-plugin-vue-i18n
+    // https://github.com/intlify/unplugin-vue-i18n
     VueI18n({
-      include: [path.resolve(__dirname, './locales/**')],
+      include: [path.resolve(import.meta.dirname, './locales/**')],
     }),
     VitePWA({
       registerType: 'autoUpdate',
@@ -114,28 +115,14 @@ export default defineConfig(({ mode }) => {
     }),
   ];
 
-  if (isReport) {
-    plugins.push(
-      /**
-       * DESC:
-       * visualize bundle
-       */
-      ViteVisualizer({
-        filename: './dist/report.html',
-        open: true,
-        brotliSize: true,
-      }),
-    );
-  }
-
   return {
     server: {
-      port: +process.env.VITE_APP_PORT || 4000,
+      port: process.env.VITE_APP_PORT ?? 4000,
     },
     resolve: {
       alias: {
-        '/@': path.resolve(__dirname, './src'),
-        '/@/stores': path.resolve(__dirname, './src/stores'),
+        '/@': path.resolve(import.meta.dirname, './src'),
+        '/@/stores': path.resolve(import.meta.dirname, './src/stores'),
       },
     },
     build: {
@@ -169,8 +156,11 @@ export default defineConfig(({ mode }) => {
     test: {
       include: ['test/**/*.test.ts'],
       environment: 'jsdom',
-      deps: {
-        inline: ['@vue', '@vueuse', 'vue-demi'],
+      setupFiles: ['test/setup.ts'],
+      server: {
+        deps: {
+          inline: ['@vue', '@vueuse', 'vue-demi'],
+        },
       },
     },
   };

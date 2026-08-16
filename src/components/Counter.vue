@@ -4,7 +4,8 @@
       href="#"
       class="btn counter hover:(scale-110 transition duration-500)"
       @click="counter.increment()"
-    >{{ counter.count === 0 ? 'Click me' : `${counter.count} times` }}</a>
+      >{{ counter.count === 0 ? 'Click me' : `${counter.count} times` }}</a
+    >
   </div>
 </template>
 

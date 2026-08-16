@@ -9,10 +9,7 @@
         leave-from-class="opacity-100"
         leave-to-class="opacity-0"
       >
-        <logo-component
-          v-if="show"
-          class="w-52 mx-auto mb-12"
-        ></logo-component>
+        <logo-component v-if="show" class="w-52 mx-auto mb-12"></logo-component>
       </transition>
     </div>
 
@@ -53,13 +50,16 @@
         </li>
       </ul>
 
-      <span class="text-xs">{{ t('made_by') }}
+      <span class="text-xs"
+        >{{ t('made_by') }}
         <a
           class="footer-link text-cyan-400 hover:text-cyan-500"
           href="https://github.com/rubiin"
           rel="noreferrer"
           target="_blank"
-        >Rubiin</a></span>
+          >Rubiin</a
+        ></span
+      >
     </footer>
   </div>
 </template>

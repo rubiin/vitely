@@ -16,7 +16,7 @@ This template should help get you started developing with Vue 3 and Typescript i
 
 ## Features
 
-- ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite),[ESBuild](https://github.com/evanw/esbuild) - born with fastness
+- ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite](https://github.com/vitejs/vite) - born with fastness
 
 - 📦 [Components auto importing](./src/components)
 
@@ -31,8 +31,6 @@ This template should help get you started developing with Vue 3 and Typescript i
 - 🌍 [I18n ready](./locales)
 
 - 🔥 Use the [new `<script setup>` syntax](https://github.com/vuejs/rfcs/pull/227)
-
-- 🔧 PostCSS with autoprefixer
 
 - 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - directly use Vue Composition API and others without importing
 
@@ -53,8 +51,7 @@ This repo brings few things pre-packed, so you don't need to install them manual
 ### Styling
 
 - [Uno CSS](https://github.com/antfu/unocss)(https://github.com/antfu/unocss)
-- PostCSS with plugins support
-- Default [Google Fonts](https://github.com/stafyniaksacha/vite-plugin-fonts#readme) with `vite-plugin-fonts`
+- Default [Google Fonts](https://github.com/cssninjaStudio/unplugin-fonts#readme) with `unplugin-fonts`
 
 ### Icons
 
@@ -63,14 +60,12 @@ This repo brings few things pre-packed, so you don't need to install them manual
 
 ### Plugins
 
-- [`@vueuse/head`](https://github.com/vueuse/head) - manipulate document head reactively
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - components auto import
 - [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - Directly use Vue Composition API and others without importing
 - [`vite-plugin-compress`](https://github.com/alloc/vite-plugin-compress) - Compress your bundle + assets from Vite
-- [`vite-plugin-vue-i18n`](https://github.com/intlify/vite-plugin-vue-i18n) - Vite plugin for Vue I18n
-- [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa) - PWA
-- [`rollup-plugin-visualizer`](https://github.com/antfu/vite-plugin-pwa) - visualize and analyze your bundle to see which modules are taking up space.
-- [`@rollup/plugin-strip`](https://github.com/antfu/vite-plugin-pwa) - remove debugger statements and functions like assert.equal and console.log from your code
+- [`@intlify/unplugin-vue-i18n`](https://github.com/intlify/bundle-tools) - Vite plugin for Vue I18n
+- [`vite-plugin-pwa`](https://github.com/vite-pwa/vite-plugin-pwa) - PWA
+- [`@rollup/plugin-strip`](https://github.com/rollup/plugins/tree/master/packages/strip) - remove debugger statements and functions like assert.equal and console.log from your code
 - [`Vue I18n`](https://github.com/intlify/vue-i18n-next) - Internationalization
 - [`Vue Router`](https://github.com/vuejs/vue-router)
 - [`Pinia`](https://pinia.esm.dev) - Intuitive, type safe, light and flexible Store for Vue using the composition api
@@ -79,16 +74,17 @@ This repo brings few things pre-packed, so you don't need to install them manual
 ### Coding Style
 
 - Use Composition API with [`<script setup>` SFC syntax](https://github.com/vuejs/rfcs/pull/227)
-- [ESLint](https://eslint.org/) with [@antfu/eslint-config](https://github.com/antfu/eslint-config), single quotes, no sem
+- [Oxlint](https://oxc.rs/docs/guide/usage/linter) for linting
+- [Oxfmt](https://oxc.rs/docs/guide/usage/formatter) for formatting (Prettier-compatible)
 
 ```
-yarn
+pnpm
 ```
 
 ### Use it
 
 ```
-yarn dev
+pnpm dev
 ```
 
 This will serve the app at [http://localhost:4000](http://localhost:4000)
@@ -96,7 +92,7 @@ This will serve the app at [http://localhost:4000](http://localhost:4000)
 ### Build it
 
 ```
-yarn build
+pnpm build
 ```
 
 Builds the app for production to the `dist` folder.<br>

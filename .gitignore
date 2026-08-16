@@ -98,3 +98,4 @@ web_modules/
 
 
 cypress/videos
+storybook-static

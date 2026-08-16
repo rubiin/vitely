@@ -1,0 +1,19 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "printWidth": 80,
+  "singleQuote": true,
+  "semi": true,
+  "trailingComma": "all",
+  "arrowParens": "avoid",
+  "ignorePatterns": [
+    "dist/**",
+    ".local",
+    ".output.js",
+    "auto-imports.d.ts",
+    "components.d.ts",
+    "**/*.svg",
+    "**/*.sh",
+    "public/**",
+    "lib/**"
+  ]
+}

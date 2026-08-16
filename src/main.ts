@@ -9,7 +9,7 @@ import { Router } from '/@/router';
 import App from './App.vue';
 
 // i18n
-import messages from '@intlify/vite-plugin-vue-i18n/messages';
+import messages from '@intlify/unplugin-vue-i18n/messages';
 
 // store
 import { createPinia } from 'pinia';

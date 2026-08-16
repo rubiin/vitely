@@ -5,24 +5,29 @@ export default {
   component: MyHeader,
 };
 
-const Template = args => ({
-  // Components used in your story `template` are defined in the `components` object
-  components: { MyHeader },
-  // The story's `args` need to be mapped into the template through the `setup()` method
-  setup() {
-    // Story args can be spread into the returned object
-    return { ...args };
+export const LoggedIn = {
+  render: args => ({
+    components: { MyHeader },
+    setup() {
+      // Story args can be spread into the returned object
+      return { ...args };
+    },
+    template: '<my-header :user="user" />',
+  }),
+  args: {
+    user: {},
   },
-  // Then, the spread values can be accessed directly in the template
-  template: '<my-header :user="user" />',
-});
-
-export const LoggedIn = Template.bind({});
-LoggedIn.args = {
-  user: {},
 };
 
-export const LoggedOut = Template.bind({});
-LoggedOut.args = {
-  user: null,
+export const LoggedOut = {
+  render: args => ({
+    components: { MyHeader },
+    setup() {
+      return { ...args };
+    },
+    template: '<my-header :user="user" />',
+  }),
+  args: {
+    user: null,
+  },
 };

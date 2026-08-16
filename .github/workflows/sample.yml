@@ -4,30 +4,33 @@ on: [push, pull_request]
 
 jobs:
   build:
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     strategy:
       matrix:
-        os: [ubuntu-latest]
-        node-version: [14.x, 16.x]
+        node-version: [22.x]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-      - run: yarn
-      - run: yarn build
-      - run: npx lockfile-lint --path yarn.lock --allowed-hosts npm yarn --validate-https
-      - run: yarn test:unit
-      - run: yarn stylelint:fix
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
+      - run: pnpm test:unit
+      - run: pnpm lint
+      - run: pnpm format:check
+      - run: pnpm stylelint:fix
         env:
           CI: true
 
       - name: Cypress run
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v6.10.9
         with:
-          build: npm run build
-          start: npm run dev
+          build: pnpm build
+          start: pnpm dev
         env:
           CI: true

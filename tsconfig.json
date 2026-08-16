@@ -3,14 +3,14 @@
     "baseUrl": ".",
     "target": "esnext",
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "strict": true,
     "jsx": "preserve",
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
-    "types": ["vite/client", "node", "@intlify/vite-plugin-vue-i18n/client"],
+    "types": ["vite/client", "node"],
     "incremental": false,
     "skipLibCheck": true,
     "noUnusedLocals": true,
@@ -27,7 +27,7 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
-    "auto-import.d.ts"
+    "auto-imports.d.ts"
   ],
   "exclude": ["dist", "node_modules", "cypress"]
 }

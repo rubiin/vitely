@@ -1,8 +1,11 @@
 import { useStorage } from '@vueuse/core';
-import { RouteRecordRaw } from 'vue-router';
-import { IRoute } from '../interface/router';
+import { RouteLocationNormalized } from 'vue-router';
 
-export const auth = (to: RouteRecordRaw, from: IRoute, next: Function) => {
+export const auth = (
+  to: RouteLocationNormalized,
+  from: RouteLocationNormalized,
+  next: Function,
+) => {
   const token = useStorage('accessToken', null);
   const publicPages = [
     '/login',

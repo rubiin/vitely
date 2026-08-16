@@ -1,0 +1,34 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "vue", "import", "promise"],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn",
+    "perf": "warn"
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "ignorePatterns": [
+    "dist/**",
+    "dist-ssr/**",
+    "coverage/**",
+    "src/stories/**",
+    "auto-imports.d.ts",
+    "components.d.ts",
+    "**/*.local"
+  ],
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-return-assign": "off",
+    "no-useless-catch": "off",
+    "no-prototype-builtins": "off",
+    "no-unused-expressions": "off",
+    "no-useless-escape": "off",
+    "import/no-absolute-path": "off",
+    "import/no-unassigned-import": "off",
+    "import/no-named-as-default-member": "off",
+    "vue/require-default-prop": "error"
+  }
+}

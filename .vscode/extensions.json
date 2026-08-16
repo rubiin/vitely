@@ -3,8 +3,8 @@
     "antfu.vite",
     "lokalise.i18n-ally",
     "antfu.iconify",
-    "dbaeumer.vscode-eslint",
-    "voorjaar.windicss-intellisense",
-    "csstools.postcss"
+    "oxc.vscode-oxc",
+    "antfu.unocss",
+    "vue.volar"
   ]
 }
