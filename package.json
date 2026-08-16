@@ -16,7 +16,7 @@
   "license": "MIT",
   "author": "Rubiin",
   "scripts": {
-    "dev": "vite --host --mode dev",
+    "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "oxlint",
