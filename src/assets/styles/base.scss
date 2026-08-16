@@ -176,33 +176,43 @@ a:hover {
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  padding: 10px 18px;
-  border-radius: 4px;
+  min-height: 44px;
+  padding: 12px 22px;
+  border: 1px solid transparent;
+  border-radius: 6px;
   font-family: var(--mono);
   font-size: 14px;
+  font-weight: 500;
   line-height: 1;
+  letter-spacing: 0.02em;
+  color: var(--ink);
   cursor: pointer;
-  border: 1px solid transparent;
+  touch-action: manipulation;
   transition:
     background-color 200ms ease-out,
     border-color 200ms ease-out,
     color 200ms ease-out,
+    box-shadow 200ms ease-out,
     transform 200ms ease-out;
 }
 
 .btn:active {
-  transform: translateY(1px);
+  transform: translateY(1px) scale(0.98);
 }
 
 .btn-primary {
   background-color: var(--accent);
   color: var(--accent-ink);
+  box-shadow: 0 2px 8px rgb(0 0 0 / 18%);
 }
 
 .btn-primary:hover {
   background-color: var(--accent-strong);
   color: var(--accent-ink);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgb(0 0 0 / 22%);
 }
 
 .btn-ghost {
@@ -212,8 +222,8 @@ a:hover {
 }
 
 .btn-ghost:hover {
-  border-color: var(--ink);
-  color: var(--ink);
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 /* ---------- reduced motion ---------- */

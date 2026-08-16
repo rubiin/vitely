@@ -1,8 +1,6 @@
 import { createApp } from 'vue';
 import { createI18n } from 'vue-i18n';
 
-import axios from './axios/axios';
-
 // Router
 import { Router } from '/@/router';
 
@@ -30,8 +28,6 @@ const i18n = createI18n({
   locale: 'en',
   messages,
 });
-
-app.config.globalProperties.$http = axios;
 
 app.use(i18n);
 

@@ -32,3 +32,7 @@ jobs:
           start: pnpm dev
         env:
           CI: true
+          # On-headless failure screenshots can hang (frozen CSS animations in
+          # headless Electron), which times out the run; disable them and video.
+          CYPRESS_SCREENSHOT_ON_RUN_FAILURE: 'false'
+          CYPRESS_VIDEO: 'false'

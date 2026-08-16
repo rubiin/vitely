@@ -12,8 +12,6 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     BoatMark: typeof import('./src/components/BoatMark.vue')['default']
-    Counter: typeof import('./src/components/Counter.vue')['default']
-    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     HeroBoat: typeof import('./src/components/HeroBoat.vue')['default']
     ProjectTree: typeof import('./src/components/ProjectTree.vue')['default']
     Reveal: typeof import('./src/components/Reveal.vue')['default']

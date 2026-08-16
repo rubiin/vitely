@@ -32,10 +32,11 @@
           <button
             type="button"
             class="icon-btn"
+            :aria-label="t('toggle_language')"
             :title="t('toggle_language')"
             @click="toggleLocales"
           >
-            <i class="i-carbon-translate" />
+            <i class="i-carbon-translate" aria-hidden="true" />
           </button>
           <ThemeSelect />
         </nav>
@@ -360,18 +361,28 @@ const treeLines = [
   width: 34px;
   height: 34px;
   padding: 0;
-  border: none;
+  border: 1px solid var(--border);
   border-radius: 6px;
   font-size: 18px;
   color: var(--muted);
   background-color: transparent;
   cursor: pointer;
-  transition: color 200ms ease-out;
+  touch-action: manipulation;
+  transition:
+    background-color 200ms ease-out,
+    border-color 200ms ease-out,
+    color 200ms ease-out,
+    transform 200ms ease-out;
 }
 
 .icon-btn:hover {
-  color: var(--ink);
-  background-color: color-mix(in srgb, var(--border) 40%, transparent);
+  border-color: var(--accent);
+  color: var(--accent);
+  background-color: color-mix(in srgb, var(--accent) 10%, transparent);
+}
+
+.icon-btn:active {
+  transform: translateY(1px) scale(0.98);
 }
 
 /* ---------- hero ---------- */

@@ -1,7 +1,12 @@
 <template>
   <div :ref="setEl" class="tree font-mono-ui">
     <p v-for="(line, i) in visibleLines" :key="i" class="tree-line">
-      {{ line }}
+      <span
+        v-for="(segment, j) in line.segments"
+        :key="j"
+        :class="segment.cls"
+        >{{ segment.text }}</span
+      >
     </p>
     <span v-if="showCursor" class="cursor" aria-hidden="true"></span>
   </div>
@@ -9,6 +14,15 @@
 
 <script setup lang="ts">
 import { useInView } from '/@/composables';
+
+interface TreeSegment {
+  text: string;
+  cls: string;
+}
+
+interface TreeLine {
+  segments: TreeSegment[];
+}
 
 const props = withDefaults(
   defineProps<{
@@ -44,8 +58,27 @@ watch(
   { immediate: true },
 );
 
-const visibleLines = computed(() => props.lines.slice(0, shown.value));
+const visibleLines = computed<TreeLine[]>(() =>
+  props.lines.slice(0, shown.value).map(line => parseLine(line)),
+);
+
 const showCursor = computed(() => shown.value < props.lines.length);
+
+function parseLine(line: string): TreeLine {
+  const segments: TreeSegment[] = [];
+  const branch = line.match(/^(├── |└── )/);
+  if (branch) {
+    segments.push({ text: branch[0], cls: 'tree-branch' });
+    line = line.slice(branch[0].length);
+  }
+  const isDir = line.endsWith('/');
+  const isRoot = !branch && isDir;
+  segments.push({
+    text: line,
+    cls: isRoot ? 'tree-dir tree-root' : isDir ? 'tree-dir' : 'tree-file',
+  });
+  return { segments };
+}
 
 onUnmounted(() => clearInterval(timer));
 </script>
@@ -54,6 +87,7 @@ onUnmounted(() => clearInterval(timer));
 .tree {
   padding: 24px 26px;
   border: 1px solid var(--border);
+  border-left: 2px solid var(--accent);
   border-radius: 8px;
   overflow-x: auto;
   font-size: 14px;
@@ -65,6 +99,24 @@ onUnmounted(() => clearInterval(timer));
 
 .tree-line {
   margin: 0;
+}
+
+.tree-branch {
+  color: var(--border);
+  user-select: none;
+}
+
+.tree-dir {
+  color: var(--accent);
+}
+
+.tree-root {
+  font-weight: 600;
+  color: var(--accent-strong);
+}
+
+.tree-file {
+  color: var(--ink);
 }
 
 .cursor {
