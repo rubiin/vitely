@@ -3,6 +3,7 @@ allowBuilds:
   cypress: true
   esbuild: true
   fsevents: true
+  workerd: true
 
 # dependency behavior
 dedupeDirectDeps: true

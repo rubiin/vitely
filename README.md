@@ -42,7 +42,7 @@ This template should help get you started developing with Vue 3 and Typescript i
 
 <br>
 
-<p align='center'><a href="https://vitely.vercel.app"> Live Demo</a><p>
+<p align='center'><a href="https://vitely.pages.dev"> Live Demo</a><p>
 
 ## Pre-📦
 
