@@ -9,7 +9,8 @@ import svgLoader from 'vite-svg-loader';
 import strip from '@rollup/plugin-strip';
 import path from 'path';
 import { VitePWA } from 'vite-plugin-pwa';
-import viteCompression from 'vite-plugin-compression';
+import {compression} from 'vite-plugin-compression2';
+import { cloudflare } from "@cloudflare/vite-plugin"
 
 export default defineConfig(({ mode }) => {
   const isDev = mode === 'dev';
@@ -77,8 +78,8 @@ export default defineConfig(({ mode }) => {
         ],
       },
     }),
-    viteCompression({
-      algorithm: 'brotliCompress',
+    compression({
+      algorithms: ['brotliCompress'],
     }),
 
     // https://github.com/intlify/unplugin-vue-i18n
@@ -113,6 +114,7 @@ export default defineConfig(({ mode }) => {
         ],
       },
     }),
+    cloudflare()
   ];
 
   return {
