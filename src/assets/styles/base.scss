@@ -1,18 +1,6 @@
 :root {
-  --bg: #faf9f7;
-  --surface: #ffffff;
-  --ink: #5b1e24;
-  --muted: #8a5a5c;
-  --border: #e5d5d0;
-  --accent: #0f766e;
-  --accent-strong: #115e59;
-  --accent-ink: #ffffff;
-  --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
-  --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
-}
-
-[data-theme='tokyo-night'] {
+  /* Tokyo Night is the default theme; its palette lives here so the first
+     paint matches the default before the theme composable runs. */
   --bg: #1a1b26;
   --surface: #16161e;
   --ink: #c0caf5;
@@ -22,6 +10,21 @@
   --accent-strong: #89b4ff;
   --accent-ink: #1a1b26;
   --wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='10' viewBox='0 0 240 10'%3E%3Cpath d='M0 5 Q 15 1 30 5 T 60 5 T 90 5 T 120 5 T 150 5 T 180 5 T 210 5 T 240 5' fill='none' stroke='%233b4261' stroke-width='1'/%3E%3C/svg%3E");
+  --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+}
+
+[data-theme='light'] {
+  --bg: #faf9f7;
+  --surface: #ffffff;
+  --ink: #5b1e24;
+  --muted: #8a5a5c;
+  --border: #e5d5d0;
+  --accent: #0f766e;
+  --accent-strong: #115e59;
+  --accent-ink: #ffffff;
+  --wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='10' viewBox='0 0 240 10'%3E%3Cpath d='M0 5 Q 15 1 30 5 T 60 5 T 90 5 T 120 5 T 150 5 T 180 5 T 210 5 T 240 5' fill='none' stroke='%23b9a5a2' stroke-width='1'/%3E%3C/svg%3E");
 }
 
 [data-theme='everforest'] {
@@ -58,6 +61,30 @@
   --accent-strong: #ff5c8a;
   --accent-ink: #0d0221;
   --wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='10' viewBox='0 0 240 10'%3E%3Cpath d='M0 5 Q 15 1 30 5 T 60 5 T 90 5 T 120 5 T 150 5 T 180 5 T 210 5 T 240 5' fill='none' stroke='%232f2350' stroke-width='1'/%3E%3C/svg%3E");
+}
+
+[data-theme='nord'] {
+  --bg: #2e3440;
+  --surface: #3b4252;
+  --ink: #d8dee9;
+  --muted: #81a1c1;
+  --border: #434c5e;
+  --accent: #88c0d0;
+  --accent-strong: #8fbcbb;
+  --accent-ink: #2e3440;
+  --wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='10' viewBox='0 0 240 10'%3E%3Cpath d='M0 5 Q 15 1 30 5 T 60 5 T 90 5 T 120 5 T 150 5 T 180 5 T 210 5 T 240 5' fill='none' stroke='%23434c5e' stroke-width='1'/%3E%3C/svg%3E");
+}
+
+[data-theme='catppuccin'] {
+  --bg: #1e1e2e;
+  --surface: #313244;
+  --ink: #cdd6f4;
+  --muted: #a6adc8;
+  --border: #45475a;
+  --accent: #cba6f7;
+  --accent-strong: #b4befe;
+  --accent-ink: #1e1e2e;
+  --wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='10' viewBox='0 0 240 10'%3E%3Cpath d='M0 5 Q 15 1 30 5 T 60 5 T 90 5 T 120 5 T 150 5 T 180 5 T 210 5 T 240 5' fill='none' stroke='%2345475a' stroke-width='1'/%3E%3C/svg%3E");
 }
 
 *,

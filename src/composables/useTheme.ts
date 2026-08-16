@@ -5,7 +5,9 @@ export type ThemeId =
   | 'tokyo-night'
   | 'everforest'
   | 'darcula'
-  | 'cyberpunk';
+  | 'cyberpunk'
+  | 'nord'
+  | 'catppuccin';
 
 export interface ThemeOption {
   id: ThemeId;
@@ -19,6 +21,8 @@ export const THEMES: ThemeOption[] = [
   { id: 'everforest', label: 'Everforest', dot: '#a7c080' },
   { id: 'darcula', label: 'Darcula', dot: '#589df6' },
   { id: 'cyberpunk', label: 'Cyberpunk', dot: '#ff2a6d' },
+  { id: 'nord', label: 'Nord', dot: '#88c0d0' },
+  { id: 'catppuccin', label: 'Catppuccin', dot: '#cba6f7' },
 ];
 
 const STORAGE_KEY = 'vitely-theme';
@@ -37,7 +41,7 @@ export function useTheme(): ThemeComposition {
     typeof localStorage !== 'undefined'
       ? localStorage.getItem(STORAGE_KEY)
       : null;
-  const theme = ref<ThemeId>(isThemeId(stored) ? stored : 'light');
+  const theme = ref<ThemeId>(isThemeId(stored) ? stored : 'tokyo-night');
 
   const applyTheme = (id: ThemeId) => {
     if (typeof document !== 'undefined') {

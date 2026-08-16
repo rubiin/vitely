@@ -98,7 +98,7 @@ export default defineConfig(({ mode }) => {
         name: 'Vitely',
         short_name: 'Vitely',
         description: 'A progressive web app boilerplate',
-        theme_color: '#ffffff',
+        theme_color: '#1a1b26',
         icons: [
           {
             src: '/android-chrome-192x192.png',
