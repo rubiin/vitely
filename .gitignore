@@ -17,6 +17,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
+.wrangler
 .pnpm-debug.log*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)

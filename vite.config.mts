@@ -9,8 +9,8 @@ import svgLoader from 'vite-svg-loader';
 import strip from '@rollup/plugin-strip';
 import path from 'path';
 import { VitePWA } from 'vite-plugin-pwa';
-import {compression} from 'vite-plugin-compression2';
-import { cloudflare } from "@cloudflare/vite-plugin"
+import { compression } from 'vite-plugin-compression2';
+import { cloudflare } from '@cloudflare/vite-plugin';
 
 export default defineConfig(({ mode }) => {
   const isDev = mode === 'dev';
@@ -114,7 +114,7 @@ export default defineConfig(({ mode }) => {
         ],
       },
     }),
-    cloudflare()
+    cloudflare(),
   ];
 
   return {

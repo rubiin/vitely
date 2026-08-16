@@ -5,7 +5,7 @@ export default defineConfig({
     baseUrl: 'http://localhost:4000',
     specPattern: 'cypress/integration/**/*.spec.ts',
     chromeWebSecurity: false,
-    setupNodeEvents(on, config) {
+    setupNodeEvents(_on, _config) {
       // implement node event listeners here
     },
   },

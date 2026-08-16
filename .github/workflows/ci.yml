@@ -10,7 +10,6 @@ jobs:
         node-version: [24.x]
 
     steps:
-
       - name: Setup pnpm
         uses: pnpm/action-setup@v6
         with:
@@ -22,7 +21,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: pnpm
 
-      
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
       - run: pnpm test:unit
