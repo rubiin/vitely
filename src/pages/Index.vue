@@ -74,7 +74,10 @@ const toggleLocales = () => {
   locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length];
 };
 
-const { toggleDark } = useTheme();
+const { theme, setTheme } = useTheme();
+
+const toggleDark = () =>
+  setTheme(theme.value === 'light' ? 'tokyo-night' : 'light');
 
 onMounted(() => {
   document.body.classList.add('dark:bg-gray-800', 'dark:text-gray-200');

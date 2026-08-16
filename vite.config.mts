@@ -117,7 +117,7 @@ export default defineConfig(({ mode }) => {
 
   return {
     server: {
-      port: process.env.VITE_APP_PORT ?? 4000,
+      port: Number(process.env.VITE_APP_PORT) || 4000,
     },
     resolve: {
       alias: {

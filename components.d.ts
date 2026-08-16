@@ -21,5 +21,6 @@ declare module 'vue' {
     RouterView: typeof import('vue-router')['RouterView']
     SailDivider: typeof import('./src/components/SailDivider.vue')['default']
     TerminalBlock: typeof import('./src/components/TerminalBlock.vue')['default']
+    ThemeSelect: typeof import('./src/components/ThemeSelect.vue')['default']
   }
 }

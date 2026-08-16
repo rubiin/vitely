@@ -37,14 +37,7 @@
           >
             <i class="i-carbon-translate" />
           </button>
-          <button
-            type="button"
-            class="icon-btn"
-            :title="t('toggle_theme')"
-            @click="toggleDark()"
-          >
-            <i class="i-carbon-sun dark:i-carbon-moon" />
-          </button>
+          <ThemeSelect />
         </nav>
       </div>
     </header>
@@ -225,8 +218,8 @@
 </template>
 
 <script setup lang="ts">
-import { useTheme } from '/@/composables';
 import BoatMark from '/@/components/BoatMark.vue';
+import ThemeSelect from '/@/components/ThemeSelect.vue';
 import HeroBoat from '/@/components/HeroBoat.vue';
 import SailDivider from '/@/components/SailDivider.vue';
 import Reveal from '/@/components/Reveal.vue';
@@ -234,7 +227,6 @@ import TerminalBlock from '/@/components/TerminalBlock.vue';
 import ProjectTree from '/@/components/ProjectTree.vue';
 
 const { t, availableLocales, locale } = useI18n();
-const { toggleDark } = useTheme();
 
 const toggleLocales = () => {
   const locales = availableLocales;

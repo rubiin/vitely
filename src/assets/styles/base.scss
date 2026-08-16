@@ -1,9 +1,9 @@
 :root {
   --bg: #faf9f7;
   --surface: #ffffff;
-  --ink: #1a1917;
-  --muted: #6f6a62;
-  --border: #e7e3db;
+  --ink: #5b1e24;
+  --muted: #8a5a5c;
+  --border: #e5d5d0;
   --accent: #0f766e;
   --accent-strong: #115e59;
   --accent-ink: #ffffff;
@@ -12,15 +12,52 @@
   --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
 }
 
-.dark {
-  --bg: #141311;
-  --surface: #1c1b18;
-  --ink: #ece8e0;
-  --muted: #a29c90;
-  --border: #2c2a25;
-  --accent: #2dd4bf;
-  --accent-strong: #5eead4;
-  --accent-ink: #141311;
+[data-theme='tokyo-night'] {
+  --bg: #1a1b26;
+  --surface: #16161e;
+  --ink: #c0caf5;
+  --muted: #565f89;
+  --border: #3b4261;
+  --accent: #7aa2f7;
+  --accent-strong: #89b4ff;
+  --accent-ink: #1a1b26;
+  --wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='10' viewBox='0 0 240 10'%3E%3Cpath d='M0 5 Q 15 1 30 5 T 60 5 T 90 5 T 120 5 T 150 5 T 180 5 T 210 5 T 240 5' fill='none' stroke='%233b4261' stroke-width='1'/%3E%3C/svg%3E");
+}
+
+[data-theme='everforest'] {
+  --bg: #2d353b;
+  --surface: #343f44;
+  --ink: #d3c6aa;
+  --muted: #859289;
+  --border: #4a555b;
+  --accent: #a7c080;
+  --accent-strong: #b8c892;
+  --accent-ink: #2d353b;
+  --wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='10' viewBox='0 0 240 10'%3E%3Cpath d='M0 5 Q 15 1 30 5 T 60 5 T 90 5 T 120 5 T 150 5 T 180 5 T 210 5 T 240 5' fill='none' stroke='%234a555b' stroke-width='1'/%3E%3C/svg%3E");
+}
+
+[data-theme='darcula'] {
+  --bg: #1e1f22;
+  --surface: #2b2b2b;
+  --ink: #a9b7c6;
+  --muted: #606366;
+  --border: #3c3f41;
+  --accent: #4e8ff0;
+  --accent-strong: #6aa2f6;
+  --accent-ink: #1e1f22;
+  --wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='10' viewBox='0 0 240 10'%3E%3Cpath d='M0 5 Q 15 1 30 5 T 60 5 T 90 5 T 120 5 T 150 5 T 180 5 T 210 5 T 240 5' fill='none' stroke='%233c3f41' stroke-width='1'/%3E%3C/svg%3E");
+}
+
+[data-theme='cyberpunk'] {
+  --bg: #0d0221;
+  --surface: #1a0b2e;
+  --ink: #e0d7f3;
+  --muted: #9d8fc4;
+  --border: #2f2350;
+  --accent: #ff2a6d;
+  --accent-strong: #ff5c8a;
+  --accent-ink: #0d0221;
+  --wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='10' viewBox='0 0 240 10'%3E%3Cpath d='M0 5 Q 15 1 30 5 T 60 5 T 90 5 T 120 5 T 150 5 T 180 5 T 210 5 T 240 5' fill='none' stroke='%232f2350' stroke-width='1'/%3E%3C/svg%3E");
 }
 
 *,
@@ -85,17 +122,17 @@ a:hover {
 /**
  * The "ocean line" — Vitely's visual language.
  * A thin, endlessly drifting wave rendered as a repeating inline SVG.
+ * The stroke color is provided per-theme via the --wave token.
  */
 .wave-line {
   height: 10px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='10' viewBox='0 0 240 10'%3E%3Cpath d='M0 5 Q 15 1 30 5 T 60 5 T 90 5 T 120 5 T 150 5 T 180 5 T 210 5 T 240 5' fill='none' stroke='%23b9b4aa' stroke-width='1'/%3E%3C/svg%3E");
+  background-image: var(
+    --wave,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='10' viewBox='0 0 240 10'%3E%3Cpath d='M0 5 Q 15 1 30 5 T 60 5 T 90 5 T 120 5 T 150 5 T 180 5 T 210 5 T 240 5' fill='none' stroke='%23b9a5a2' stroke-width='1'/%3E%3C/svg%3E")
+  );
   background-size: 240px 10px;
   background-repeat: repeat-x;
   animation: wave-drift 14s linear infinite;
-}
-
-.dark .wave-line {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='10' viewBox='0 0 240 10'%3E%3Cpath d='M0 5 Q 15 1 30 5 T 60 5 T 90 5 T 120 5 T 150 5 T 180 5 T 210 5 T 240 5' fill='none' stroke='%23433f38' stroke-width='1'/%3E%3C/svg%3E");
 }
 
 @keyframes wave-drift {
