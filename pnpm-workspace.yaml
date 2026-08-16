@@ -3,3 +3,14 @@ allowBuilds:
   cypress: true
   esbuild: true
   fsevents: true
+
+
+# dependency behavior
+dedupeDirectDeps: true
+
+# hoisting behavior
+hoist: true
+shamefullyHoist: true
+
+ignoreWorkspaceRootCheck: true
+minimumReleaseAge: 0

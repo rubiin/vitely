@@ -12,11 +12,12 @@
       @keydown.enter.prevent="selectHighlighted"
       @keydown.esc="close"
     >
-      <span
-        class="theme-dot"
-        :style="{ backgroundColor: current.dot }"
-        aria-hidden="true"
-      ></span>
+      <span class="theme-icon-wrap" aria-hidden="true">
+        <Transition name="swap" mode="out-in">
+          <i v-if="isLight" key="sun" class="i-carbon-sun theme-icon" />
+          <i v-else key="moon" class="i-carbon-moon theme-icon" />
+        </Transition>
+      </span>
       <span class="theme-label font-mono-ui">{{ current.label }}</span>
       <svg
         class="theme-caret"
@@ -88,6 +89,8 @@ const current = computed(
   () => THEMES.find(option => option.id === theme.value) ?? THEMES[0],
 );
 
+const isLight = computed(() => theme.value === 'light');
+
 function openMenu() {
   highlighted.value = THEMES.findIndex(option => option.id === theme.value);
   open.value = true;
@@ -155,6 +158,37 @@ onClickOutside(rootEl, close);
   width: 9px;
   height: 9px;
   border-radius: 50%;
+}
+
+.theme-icon-wrap {
+  display: grid;
+  flex: none;
+  width: 16px;
+  height: 16px;
+  place-items: center;
+}
+
+.theme-icon {
+  font-size: 16px;
+}
+
+/* sun/moon crossfade when the theme changes */
+
+.swap-enter-active,
+.swap-leave-active {
+  transition:
+    opacity 260ms ease-out,
+    transform 260ms ease-out;
+}
+
+.swap-enter-from {
+  opacity: 0;
+  transform: rotate(-100deg) scale(0.5);
+}
+
+.swap-leave-to {
+  opacity: 0;
+  transform: rotate(100deg) scale(0.5);
 }
 
 .theme-label {

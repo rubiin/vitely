@@ -58,7 +58,6 @@
     "@unocss/transformer-variant-group": "^66.7.5",
     "@vitejs/plugin-vue": "^6.0.8",
     "cypress": "^15.20.1",
-    "cz-conventional-changelog": "^3.3.0",
     "husky": "^9.1.7",
     "jsdom": "^30.0.1",
     "lint-staged": "^17.3.0",
@@ -94,18 +93,13 @@
       "oxfmt"
     ]
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
   "browserslist": [
     "last 2 version",
     "> 0.2%"
   ],
   "engines": {
-    "node": ">=20.19.0",
-    "pnpm": ">=9"
+    "node": ">=24",
+    "pnpm": ">=11"
   },
   "packageManager": "pnpm@11.21.0"
 }
