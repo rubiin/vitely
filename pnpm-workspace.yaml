@@ -4,7 +4,6 @@ allowBuilds:
   esbuild: true
   fsevents: true
 
-
 # dependency behavior
 dedupeDirectDeps: true
 

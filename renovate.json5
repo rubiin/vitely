@@ -5,6 +5,10 @@
   extends: ['config:recommended'],
   enabledManagers: ['npm', 'github-actions'],
   packageRules: [
+     {
+      "matchPackageNames": ["typescript"],
+      "enabled": false
+    },
     {
       matchManagers: ['npm'],
       matchUpdateTypes: ['minor', 'patch'],

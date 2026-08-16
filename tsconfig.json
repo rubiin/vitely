@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "bundler",
@@ -19,7 +18,7 @@
     "declaration": true,
     "allowJs": true,
     "paths": {
-      "/@/*": ["src/*"]
+      "/@/*": ["./src/*"]
     }
   },
   "include": [
