@@ -27,11 +27,7 @@ jobs:
       - run: pnpm stylelint:fix
       - run: pnpm build
       - run: pnpm test:unit
-
-
-        env:
-          CI: true
-
+      
       - name: Cypress run
         uses: cypress-io/github-action@v6.10.9
         with:
