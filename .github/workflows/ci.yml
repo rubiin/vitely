@@ -13,7 +13,7 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v6
         with:
-          version: 11.18.0
+          version: 12.x
 
       - name: Setup Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v7
@@ -27,7 +27,7 @@ jobs:
       - run: pnpm stylelint:fix
       - run: pnpm build
       - run: pnpm test:unit
-      
+
       - name: Cypress run
         uses: cypress-io/github-action@v6.10.9
         with:
