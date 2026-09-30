@@ -33,7 +33,7 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "@vueuse/core": "^14.4.0",
+    "@vueuse/core": "^15.0.0",
     "pinia": "^4.0.3",
     "pinia-plugin-persistedstate": "^4.7.1",
     "vue": "^3.5.43",
@@ -99,7 +99,7 @@
     "> 0.2%"
   ],
   "engines": {
-    "node": ">=24.21.0",
-    "pnpm": ">=9.15.9"
+    "node": ">=24",
+    "pnpm": ">=12.8.1"
   }
 }
