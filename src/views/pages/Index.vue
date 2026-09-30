@@ -46,25 +46,17 @@
     <!-- ================= HERO ================= -->
     <section id="top" class="hero">
       <div class="hero-inner">
-        <h1
-          class="hero-title font-serif-display rise"
-          style="animation-delay: 0ms"
-        >
-          VITELY
-        </h1>
+        <h1 class="hero-title font-serif-display rise">VITELY</h1>
 
-        <p
-          class="hero-tagline font-serif-display rise"
-          style="animation-delay: 150ms"
-        >
+        <p class="hero-tagline font-serif-display rise">
           {{ t('tagline') }}
         </p>
 
-        <p class="hero-sub rise" style="animation-delay: 300ms">
+        <p class="hero-sub rise">
           {{ t('hero_sub') }}
         </p>
 
-        <div class="hero-actions rise" style="animation-delay: 450ms">
+        <div class="hero-actions rise">
           <a class="btn btn-primary" href="#quickstart"
             >{{ t('get_started') }} <span aria-hidden="true">→</span></a
           >
@@ -77,11 +69,11 @@
           >
         </div>
 
-        <p class="hero-stack font-mono-ui rise" style="animation-delay: 550ms">
+        <p class="hero-stack font-mono-ui rise">
           {{ t('stack') }}
         </p>
 
-        <div class="hero-boat rise" style="animation-delay: 600ms">
+        <div class="hero-boat rise">
           <HeroBoat @fullspeed="onFullSpeed" />
           <Transition name="fade">
             <p v-if="fullSpeed" class="full-speed font-mono-ui">
@@ -90,7 +82,7 @@
           </Transition>
         </div>
 
-        <p class="hero-supporting rise" style="animation-delay: 900ms">
+        <p class="hero-supporting rise">
           {{ t('hero_supporting') }}
         </p>
       </div>
@@ -464,6 +456,34 @@ const treeLines = [
 .rise {
   opacity: 0;
   animation: rise 700ms ease-out forwards;
+}
+
+.hero-inner > :nth-child(1).rise {
+  animation-delay: 0ms;
+}
+
+.hero-inner > :nth-child(2).rise {
+  animation-delay: 150ms;
+}
+
+.hero-inner > :nth-child(3).rise {
+  animation-delay: 300ms;
+}
+
+.hero-inner > :nth-child(4).rise {
+  animation-delay: 450ms;
+}
+
+.hero-inner > :nth-child(5).rise {
+  animation-delay: 550ms;
+}
+
+.hero-inner > :nth-child(6).rise {
+  animation-delay: 600ms;
+}
+
+.hero-inner > :nth-child(7).rise {
+  animation-delay: 900ms;
 }
 
 @keyframes rise {
